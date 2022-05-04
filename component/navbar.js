@@ -59,17 +59,7 @@ function header(){
         <div id="acc">My Account</div>
         </div>
     
-        <div id="navbar">
-            <div>MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>SKIN <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>HAIR <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>PERSONAL CARE <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>MOM & BABY CARE <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>FRAGRANCE <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>AYURVEDA <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div>BRANDS <span><i class="fa-solid fa-angle-down"></i></span></div>
-<div id="cartnavbar"><span><i class="fa-solid fa-bag-shopping"></i></span> MY CART</div>
-        </div>
+       
     `
 }
 

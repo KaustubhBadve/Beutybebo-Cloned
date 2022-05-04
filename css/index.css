@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 /* Top image CSS */
@@ -57,6 +58,7 @@ body{
     justify-content: center;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 #heartsymbol{
     margin-left: 160px;
@@ -92,6 +94,43 @@ body{
 
 /* navbar  */
 
+
+.makeuphover{
+   
+    display: flex;
+    background-color: white;
+    gap: 70px;
+    display: flex;
+    padding: 15px;
+    margin-left: 300px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #555758;
+}
+
+
+#A,#BB{
+    display: none;
+    position: sticky;
+    top: 5%;
+    left: -50%;
+    height: 700px;
+}
+#headingA,#headingB{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+#navbartitle1,#navbartitle2,#navbartitle3,#navbartitle4,#navbartitle5,#navbartitle6,#navbartitle7{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left :14px ;
+    padding-right: 14px;
+}
 #navbar{
     display: flex;
     width: 100%;
@@ -189,7 +228,7 @@ body{
     height: 98%;
     margin-left: 70px;
 }
-#footersecondlastimg>img,#belowsliding>img,#slidingshow>img{
+#starimgdiv>img,#gif>img,#footersecondlastimg>img,#belowsliding>img,#slidingshow>img{
     width: 100%;
     height: 100%;
 }
@@ -348,4 +387,295 @@ color: rgb(78, 77, 77);
 font-weight: 600;
 font-size: 15px;
 }
+#myBtn{
+    margin-left: 265px;
+    border: none;
+    color: #dd0285;
+    font-size: 14px;
+}
+#gif{
+    width: 71%;
+    height: 280px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* To keep navbar fix */
+
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+/* product 3 divs */
+
+#product3divs{
+    display: flex;
+    width: 71%;
+    height: auto;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 15px;
+  gap: 12px;
+}
+
+#headingnewarrival{
+    text-decoration: underline;
+    text-decoration-color: #be2882;
+    width: 71%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#product3divs>div{
+    margin-right: 25px;
+}
+#product3divs>div+div{
+    text-decoration: underline;
+    text-decoration-color: #be2882;
+}
+#sunproduct3divs{
+width: 430px;
+height: auto;
+gap: 30px;
+}
+#main{
+    display: flex;
+    width: 400px;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5;
+    margin: auto;
+    margin-bottom: 2px;
+    height: 160px;
+    border: 0.4px solid gainsboro;
+}
+#imgdivv{
+width: 40% ;
+height:110% ;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+}
+#productimg{
+    width: 100%;
+    height: 100px;
+}
+#starimgdiv{
+    width: 99px;
+    height: 100%;
+}
+#starandbracket{
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+    width: 230px;
+    gap: 10px;
+    height: 35px;
+}
+#pricediv{
+    display: flex;
+    gap: 13px;
+    width: 230px;
+    height: 22px;
+}
+#cutoff{
+    text-decoration: line-through;
+    color: #86888a;
+}
+#price{
+    font-size: 17px;
+    color: #be2882;
+    font-weight: 600;
+}
+#offprice{
+    font-size: 14px;
+    color: green;
+    font-weight: 600;
+}
+#buttonproduct{
+    margin-top: 13px;
+    display: flex;
+    gap: 10px;
+    width: 230px;
+    height: 30px;
+}
+#addtocartbtn{
+    padding: 8px;
+    background-color: #dd0285;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    padding-left: 22px;
+    padding-right: 22px;
+    cursor: pointer;
+}
+#addtocartbtn:hover{
+    background-color: #f566bc;
+}
+#favouratebtn{
+    background-color: gray;
+    color: whitesmoke;
+    font-size: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 35px;
+}
+#favouratebtn:hover{
+    background-color: #dd0285;
+}
+#titlee{
+    width: 230px;  
+    height: 57px; 
+}
+
+/* For vertical append of products */
+#verticalproducts{
+    width: 71%;
+    height: 410px;
+    margin: auto;
+    margin-top: 13px;
+    display: flex;
+    margin-bottom: 10px;
+}
+#mainn{
+    width: 80% !important;
+    height: 390px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+    /* line-height: 20px; */
+    text-align: center;
+    letter-spacing: 0.5;
+    /* margin: auto; */
+    margin-bottom: 2px;
+    border: 0.4px solid gainsboro;
+}
+#mainnn{
+    width: 95% !important;
+    height: 390px;
+    padding-left: 9px;
+    /* padding-right: 10px; */
+    font-size: 14px;
+    /* line-height: 20px; */
+    text-align: center;
+    letter-spacing: 0.5;
+    /* margin: auto; */
+    border: 0.4px solid gainsboro;
+}
+#imgdivvv{
+    width: 100% !important;
+    height: 62%;
+}
+#imgdivvv>img{
+    width: 100% !important;
+    height: 100%;
+}
+#titleee{
+    margin: auto;
+    margin-top: 2px;
+    font-size: 17px;
+    width: 100%;
+    height: 10%;
+}
+#starandbrackett{
+    display: flex;
+    margin: auto;
+    margin-top: 2px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 100%;
+    height: 8%;
+}
+#pricedivv{
+    margin: auto;
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    /* border: 1px solid fuchsia; */
+}
+#buttonproductt{
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+    justify-content: center;
+    /* border: 1px solid forestgreen; */
+    width: 100%;
+}
+
+/* two imgages div */
+
+#twoimgdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+    height: 280px;
+    margin: auto;
+    /* gap: 10px; */
+    margin-bottom: 28px;
+}
+#twoimgdiv>div{
+    width: 49%;
+    height: 280px;
+    cursor: pointer;
+}
+#twoimgdiv>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Category selection */
+
+#categoryy{
+    width: 71%;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    color: #86888a;
+}
+#subcategoryy{
+    border: 0.5px solid rgb(196, 196, 202);
+    width:14%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+#subcategoryy:hover{
+    background-color: #c94e98;
+    color: whitesmoke;
+}
+#divimgi{
+    width: 100%;
+    height: 70%;
+}
+
+
 
