@@ -68,7 +68,10 @@ function Verticalappend(){
   
     let addtocart=document.createElement("button")
          addtocart.innerText="Add To Cart"
-         addtocart.setAttribute("id","addtocartbtn")
+         addtocart.setAttribute("id","addtocartbtn");
+         addtocart.addEventListener("click",function(){
+           addcart(e);
+         })
     let favourate=document.createElement("button")
     favourate.innerText="♥"
     favourate.setAttribute("id","favouratebtn")
@@ -78,9 +81,17 @@ function Verticalappend(){
     main.append(imgdivv,title,starandbracket,pricediv,buttons)
   
     document.getElementById("prodlist-r").append(main);
+  
     }
     )
     
   
+  }
+  
+  var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
+  function addcart(e)
+  {
+    cart_product.push(e);
+    localStorage.setItem("cart_products",JSON.stringify(cart_product));
   }
   Verticalappend();
