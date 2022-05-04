@@ -8,14 +8,14 @@
 
 #main-r{
     display:flex;
-    border: blue solid;
+    /* border: blue solid; */
     width:80%;
     margin: auto;
     gap:30px;
 }
 #category-r{
     width:25%;
-    border: green solid;
+    /* border: green solid; */
 }
 #product-r{
     width:75%;
