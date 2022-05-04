@@ -573,6 +573,18 @@ margin-right: 10px;
     margin-bottom: 2px;
     border: 0.4px solid gainsboro;
 }
+#mainnn{
+    width: 95% !important;
+    height: 390px;
+    padding-left: 9px;
+    /* padding-right: 10px; */
+    font-size: 14px;
+    /* line-height: 20px; */
+    text-align: center;
+    letter-spacing: 0.5;
+    /* margin: auto; */
+    border: 0.4px solid gainsboro;
+}
 #imgdivvv{
     width: 100% !important;
     height: 62%;
