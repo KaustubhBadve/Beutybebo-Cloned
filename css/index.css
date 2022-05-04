@@ -90,6 +90,8 @@ body{
 }
 #acc{
     font-size: 15px;
+    width: 90px;
+    margin-left: 5px;
 }
 
 /* navbar  */
@@ -109,14 +111,14 @@ body{
 }
 
 
-#A,#BB{
+#A,#BB,#CC,#DD,#EE,#AA{
     display: none;
     position: sticky;
     top: 5%;
     left: -50%;
     height: 700px;
 }
-#headingA,#headingB{
+#headingA,#headingB,#headingC,#headingD,#headingE{
     color: black;
     font-weight: 600;
     font-size: 16px;
@@ -168,7 +170,136 @@ body{
     margin-bottom: 4PX;    
 }
 
+
+
+#searchresultdiv{
+    display: none;
+    position: absolute;
+    width: 640px;
+    height: 570px;
+    top: 18.6%;
+    left: 34%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+#searchresultdiv::-webkit-scrollbar {
+    display: none;
+    }
+
+#searchmain{
+    width: 100%;
+    height: 140px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+}
+#searchimgdiv{
+    width: 23%;
+    height: 100%;
+   
+}
+#searchimgdiv>img{
+    width: 100%;
+    height: 100%;
+}
+#mergesearch{
+width: 90%;
+height: 100%;
+font-size: 10px;
+line-height: 20px;
+}
+#searchdescription{
+    font-size: 10px;
+    color: #757677;
+    line-height: 13px;
+    overflow: hidden;
+}
+#searchname{
+    font-size: 15px;
+    font-weight: 600;
+}
+#brandname{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
 /* navbar below div */
+
+.Sidemakeuphover{
+   
+    display: flex;
+    gap: 70px;
+    display: flex;
+    padding: 15px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #555758;
+}
+
+
+#SideHA,#SideHB,#SideHC,#SideHD,#SideHE{
+    display: none;
+    background-color: white;
+    height: auto;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 1100px;
+    border-radius: 5px;
+}
+#SideHA{
+    position: fixed;
+    top: 30%;
+    left: 28%;
+}
+#SideHB{
+    position: fixed;
+    top: 35%;
+    left: 28%;
+}
+#SideHC{
+    position: fixed;
+    top: 39%;
+    left: 28%;
+}
+#SideHD{
+    position: fixed;
+    top: 41%;
+    left: 28%;
+}
+#SideHE{
+    position: fixed;
+    top: 45%;
+    left: 28%;
+}
+#headingSideA,#headingSideB,#headingSideC,#headingSideD,#headingSideE{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#profile{
+    display: none;
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    top: 19%;
+    left: 78%;
+    background-color: whitesmoke;
+    font-size: 15px;
+    padding: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#profile>div{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#profile>div:hover{
+    color: #b90471;
+}
 
 #divbelownavbar{
     display: flex;
@@ -189,10 +320,15 @@ body{
     color: grey;
     align-items: center;
 }
-#witharrow
+#divbelownavbar>div>div>div:hover
+{
+color: #be2882;
+}
+#witharrow1,#witharrow2,#witharrow3,#witharrow4,#witharrow5
 {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 #imgdiv{
     width: 20px;
@@ -222,6 +358,10 @@ body{
     display: flex !important;
     font-size: 14px;
     color: grey;
+    cursor: pointer;
+}
+#withoutarrow:hover{
+    color: #be2882;
 }
 #slidingshow{
     width: 85%;

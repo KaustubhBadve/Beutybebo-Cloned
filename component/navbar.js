@@ -52,7 +52,7 @@ function header(){
                 <option value="">--Latest Offer</option>
             </select>
         
-        <div><input type="text"  placeholder="Enter your search..."></div>
+        <div><input type="text"  placeholder="Enter your search..." id="inputsearch"></div>
         <div id="searchsymbol"><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
         <div id="heartsymbol"><span><i class="fa-solid fa-heart"></i></span></div>
         <div id="profilesymbol"><span><i class="fa-solid fa-user"></i></span></div>
@@ -60,6 +60,24 @@ function header(){
         </div>
     
        
+        <div id="navbar">
+        <div>
+        <div id="navbartitle1">MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div>
+        </div>
+
+       
+
+        
+    <div> <div id="navbartitle2">SKIN <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle3">HAIR <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div><div id="navbartitle4">PERSONAL CARE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div><div id="navbartitle5">MOM & BABY CARE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle">FRAGRANCE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle6">AYURVEDA <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle7">BRANDS <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+        <div id="cartnavbar"><span><i class="fa-solid fa-bag-shopping"></i></span> MY CART</div>
+    </div>
+
     `
 }
 
