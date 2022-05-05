@@ -87,11 +87,13 @@ function Verticalappend(){
     
   
   }
-  
+  var cart_total=localStorage.getItem("cart_total")||0;
   var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
   function addcart(e)
   {
     cart_product.push(e);
+    cart_total=Number(cart_total)+Number(e.price);
+    localStorage.setItem("cart_total",cart_total);
     localStorage.setItem("cart_products",JSON.stringify(cart_product));
   }
   Verticalappend();
