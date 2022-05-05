@@ -44,6 +44,14 @@ prod.forEach(function(e)
     let z11=create("div");
     z11.setAttribute("id","box6-r")
     z11.append(z10,z0,z2,z3,z4);
-    document.getElementById("box6-rr").append(z11);
+    let z7=create("div");
+    z7.setAttribute("id","box7-r")
+    let z5=create("button");
+    z5.innerText='Edit';
+    let z6=create("button");
+    z6.innerText='Remove item';
+  z7.append(z5,z6);
+    document.getElementById("box6-rr").append(z11,z7);
 
 })
+
