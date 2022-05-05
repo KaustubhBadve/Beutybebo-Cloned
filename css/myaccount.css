@@ -1,0 +1,151 @@
+#myaccdiv{
+    display: flex;
+    /* border: 10px solid; */
+    /* margin-bottom: -250px; */
+}
+#myaccSB{
+    width: 10%;
+    height: auto;
+    /* border: 3px solid yellow; */
+    padding-left: 12%;
+    
+}
+#myaccSB>p,h3{
+    text-align: start;
+}
+#myaccinfo{
+    width: 65%;
+    height: 500px;
+    /* border: 3px solid aqua; */
+    padding-left: 7.5%;
+}
+#contact-info{
+    display: flex;
+    /* border: 3px solid red; */
+    
+}
+.contact-info{
+    border: 1px solid grey;
+    width: 50%;
+    height: 250px;
+    /* padding-left: 1%; */
+}
+.Newsletter{
+    border: 1px solid grey;
+    width: 50%;
+    margin-left: 5%;
+    /* padding-left: 1%; */
+}
+.ci-1{
+    /* border: 1px solid grey; */
+    background-color: #f5f5f5;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+
+}
+.ci-1>h4,p,button{
+    margin-left: 10px;
+}
+.nl-1>h4,p,button{
+    margin-left: 10px;
+}
+.nl-1{
+    background-color: #f5f5f5;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+}
+.ci-1>h4{
+    color: #444444;
+    position: relative;
+    top: 12px;
+    font-size: 15px;
+}
+.nl-1>h4{
+    color:
+    #444444;
+    position: relative;
+    top: 12px;
+    font-size: 15px;
+}
+#addressbook{
+    position: relative;
+    /* border: 5px solid green; */
+    width: 65%;
+    padding-left: 30%;
+    bottom: 290px;
+
+}
+#freeDeliveryImg{
+    position: relative;
+    right: 50px;
+    top: 50px;
+    width: 250px;
+}
+.ci-3{
+    position: relative;
+    top: 70px;
+}
+.nl-3{
+    position: relative;
+    top: 120px;
+}
+.ci-3>button{
+background-color: #dd0285;
+border: none;
+color: white;
+height: 24px;
+position: relative;
+bottom: 5px;
+cursor: pointer;
+border-radius: 2px;
+}
+.ci-31>button{
+    position: relative;
+    top: 100px;
+    background-color: #dd0285;
+    border: none;
+    color: white;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.nl-3>button{
+    background-color: #dd0285;
+    border: none;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 2px;
+    }
+    #addressbook ,h3, h4{
+     color: #444444;
+    }
+
+    #myaccSB>p:hover{
+        background-color: rgb(209, 209, 209);
+    }
+    .Manage-Addresses::after{
+        content: "Manage Addresses";
+        font-size: 15px;
+        font-weight: 100;
+         
+    }
+    #myaccbefore::before{
+        content: "| ";
+        color: #dd0285;
+    }
+    #myaccbefore{
+        font-size: 17px;
+    }
+    #myaccSB,p{
+     font-size: 14px;
+     color: #444444;
+    }
+    #myaccinfo>h3:nth-child(2){
+        font-size: 16px;
+        margin-top: 40px;
+    }
