@@ -350,7 +350,11 @@ function Verticalappend(){
 
 let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
 
-  function Cartelementshow(){
+
+function Cartelementshow(){
+
+  document.getElementById("product_lists").innerHTML=null;
+ 
 productlist_cart.forEach(function(elem){
 
 let mainnnn=document.createElement("div")
@@ -383,7 +387,7 @@ qtycart.innerText="QTY : "
 qtycart.setAttribute("id","qtycart")
 
 let qtybox=document.createElement("div")
-// qtybox.innerText="1"
+qtybox.innerText=elem.qty;
 qtybox.setAttribute("id","qtybox")
 
 qtydiv.append(qtycart,qtybox)
@@ -427,7 +431,6 @@ for(let i=0;i<cart_product.length;i++)
 }   
   if(p==0)
    {cart_product.push(e);
-    
     price=parseInt(price)+parseInt(e.price)
     document.getElementById("cartaddconfirmation").style.display="block"
     document.getElementById("main-r").style.marginTop="-290px"
@@ -450,6 +453,8 @@ for(let i=0;i<cart_product.length;i++)
     price=parseInt(price)+parseInt(pric);
     localStorage.setItem("Totalprice",price);
     localStorage.setItem("cart_products",JSON.stringify(cart_product));
+    Cartelementshow();
+    window.location.reload();
   }
   }
 
