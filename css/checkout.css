@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 65% 33%;
     gap: 20px;
-  }
+   }
   #box2-r>div{
     /* border: solid green; */
   }
@@ -125,3 +125,31 @@
         .active:after {
           content: "\2212";
           }
+  #box-rr{
+    display: flex;
+    justify-content: space-between;
+  }
+  #orderbox-r{
+    width:25%;
+    background-color: #ececec;
+    padding: 10px;    
+  }
+  #orderbox-r div{
+    display: flex;
+    justify-content: space-between;
+  }
+  #box66-r{
+    display: grid;
+    grid-template-columns: 20% 49% 10% 10% 5%;
+    gap: 10px;
+    padding-left: 10px;
+  }
+  #h1-r{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #75ba75;
+    color: white;
+    width:30%;
+    text-align: center;
+  }
