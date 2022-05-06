@@ -12,7 +12,7 @@ c(prod);
 let cart_total=localStorage.getItem("Totalprice");
 c(cart_total);
 document.getElementById("Total_items").innerText=`Rs ${Number(cart_total).toFixed(2)}`;
-document.getElementById("Total_amount").innerText=`Rs ${(Number(cart_total)+55).toFixed(2)}`;
+document.getElementById("Total_amount").innerText=`Rs ${Number(cart_total).toFixed(2)}`;
 
 function create(s)
 {
