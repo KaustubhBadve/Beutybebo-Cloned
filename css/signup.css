@@ -45,6 +45,7 @@
      background-color: #dd4b39;
      cursor: pointer;
      border-radius: 5px;
+     border: none;
      
  }
  .facebook{
@@ -70,6 +71,7 @@
      background-color: #4a6eaa;
      cursor: pointer;
      border-radius: 5px;
+     border: none;
      
  }
  .or{
