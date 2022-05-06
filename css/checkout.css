@@ -125,3 +125,8 @@
         .active:after {
           content: "\2212";
           }
+
+          #box7-r>button{
+            cursor: pointer;
+
+          }

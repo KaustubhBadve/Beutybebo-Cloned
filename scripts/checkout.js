@@ -25,7 +25,7 @@ function create(s)
 }
 var prod=JSON.parse(localStorage.getItem("cart_products"));
 console.log(prod)
-prod.forEach(function(e)
+prod.forEach(function(e,i)
 {
     let z10=create("div");
     z10.setAttribute("id","box5-r")
@@ -48,10 +48,32 @@ prod.forEach(function(e)
     z7.setAttribute("id","box7-r")
     let z5=create("button");
     z5.innerText='Edit';
-    let z6=create("button");
+    let z6=document.createElement("button");
     z6.innerText='Remove item';
+    z6.addEventListener("click",function(e,i){
+       removeitem(e,i)
+    })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
 
 })
+
+
+function removeitem(e,i){
+  // if(e.qty==1){
+    prod.splice(i,1)
+    console.log(prod)
+    localStorage.setItem("cart_products",JSON.stringify(prod))
+    window.location.reload()
+  // }
+  // else{
+  //   let k=Number(e.qty)
+  //   k--
+  //   e.qty=k
+  //   console.log(prod)
+  //   localStorage.setItem("cart_products",JSON.stringify(prod))
+  //   // window.location.reload()
+  // }
+  
+}
 

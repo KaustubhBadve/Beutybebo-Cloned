@@ -5,11 +5,20 @@ document.getElementById("footer").innerHTML=footer();
 
 
 document.getElementById("profilesymbol").addEventListener("click",showlogindiv)
-
+var flag=false
 function showlogindiv(){
-  document.getElementById("profile").style.display="block"
+  if(flag==false)
+  {
+    document.getElementById("profile").style.display="block"
+    flag=true
+  }
+  else if(flag=true)
+  {
+    document.getElementById("profile").style.display="none"
+    flag=false
+  }
+  
 }
-
 
 
 
@@ -36,10 +45,21 @@ showSearch(data)
 }
 
 
+var searchflag=false
 function showSearch(data){
 
   document.getElementById("searchresultdiv").innerHTML=null
-  document.getElementById("searchresultdiv").style.display="block"
+  if(searchflag==false){
+    document.getElementById("searchresultdiv").style.display="block"
+    searchflag=true
+  }
+  else if(searchflag==true){
+    document.getElementById("searchresultdiv").style.display="none"
+    searchflag=false
+  }
+
+
+
   data.forEach(function(elem){
 
     let main=document.createElement("div")
@@ -353,7 +373,7 @@ let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
 
 function Cartelementshow(){
 
-  document.getElementById("product_lists").innerHTML=null;
+document.getElementById("product_lists").innerHTML=null;
  
 productlist_cart.forEach(function(elem){
 
@@ -403,8 +423,18 @@ document.getElementById("product_lists").append(mainnnn)
 
   document.getElementById("cartnavbar").addEventListener("click",toshowcartproduct)
 
+var cartelemflag=false
+
   function toshowcartproduct(){
-    document.getElementById("cartproductlist").style.display="block"
+    if(cartelemflag==false){
+      document.getElementById("cartproductlist").style.display="block"
+      cartelemflag=true
+    }
+   else if(cartelemflag==true)
+   {
+    document.getElementById("cartproductlist").style.display="none"
+    cartelemflag=false
+   }
   }
 
 
