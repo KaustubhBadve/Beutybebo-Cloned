@@ -72,3 +72,37 @@ function del(e)
     
 }
 
+var flag333 = false;
+  let LetMagicBegins33 = ()=>{
+    
+    if(flag333==false){
+      document.getElementById("popupShopBy9").style.display = "block" ;
+      document.querySelector("#notcHH").textContent = " ▲";
+      flag333=true;
+    }
+    else if(flag333==true) {
+      document.getElementById("popupShopBy9").style.display = "none" ;
+      document.querySelector("#notcHH").textContent = "▼";
+      flag333=false
+    }
+    
+  }
+
+  var flag444 = true;
+  let LetMagicBegins44 = ()=>{
+    
+    if(flag444==true){
+      document.getElementById("popupShopBy19").style.display = "block" ;
+      document.querySelector("#notcHH1").textContent = "▲";
+      flag444=false;
+    }
+    else if(flag444==false){
+      document.getElementById("popupShopBy19").style.display = "none" ;
+      document.querySelector("#notcHH1").textContent = "▼";
+      flag444=true
+    }
+    
+  }
+ 
+  document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
+  document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);

@@ -472,7 +472,7 @@ for(let i=0;i<cart_product.length;i++)
       BtN.textContent = "-";
       flag=false;
     }
-    else{
+    else if(flag==false){
       babba.style.display = "none" ;
       BtN.textContent = "+";
       flag=true

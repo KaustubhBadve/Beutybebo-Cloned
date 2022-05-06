@@ -1,8 +1,9 @@
 #box-r{
     width:80%;
-    height: 600px;
+    /* height: 600px; */
     margin: auto;
     /* border: solid red; */
+    height: auto;
   }
   #box1-r{
     display: grid;
@@ -22,8 +23,10 @@
   }
   #box3-r{
     /* background-color: yellow; */
-    border: 1px solid;
-    height: 450px;
+    border: 1px solid gray;
+    /* height: 450px; */
+    height: auto;
+    margin-bottom: 20px;
   }
   #box4-r{
     /* background-color: pink; */
@@ -69,14 +72,16 @@
   }
   #box9-r{
     margin: 20px;
-    height: 70%;
+    /* height: 70%; */
     /* border: blue solid; */
+    height: auto;
   }
   #box9-r>div{
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: auto;
     margin-top: -10px;
+    /* border: 1px solid brown; */
   }
   #but{
     width:90%;
@@ -92,6 +97,7 @@
     background-color: #dd0285;
     color: white;
     border: none;
+    margin-bottom: 20px;
   }
   .panel {
     padding: 0 18px;
@@ -153,3 +159,93 @@
     width:30%;
     text-align: center;
   }
+  /* //// */
+
+  #ESTIMATENtax{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 300px;
+    color: #777;
+    font-weight: bold;
+  }
+  #ESTIMATENtax1{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    width: 300px;
+    color: #777;
+    font-weight: bold;
+  }
+
+  #ESTIMATENtax>div:nth-child(2){
+    font-size: 12px;
+  }
+  #ESTIMATENtax1>div:nth-child(2){
+    font-size: 12px;
+  }
+  #plusSignforPopY{
+    background-color: whitesmoke;
+    height: 37px;
+  }
+  #popupShopBy9{
+    /* border: 2px solid; */
+    display: none;
+    width: 328px;
+    height:auto ;
+    /* display: flex; */
+    flex-direction: column;
+  }
+  #popupShopBy19{
+    /* border: 2px solid; */
+    display: none;
+    width: 328px;
+    height:auto ;
+    /* display: flex; */
+    flex-direction: column;
+  }
+  #plusSignforPopZ{
+    background-color: whitesmoke;
+    height: 37px;
+  }
+  #Enter-discount-code-btn{
+    width: 150px;
+    background-color: #444444;
+    color: white;
+  }
+  #popupShopBy9>p{
+    font-size: 13px;
+  }
+  #popupShopBy9>input,select{
+    height: 35px;
+  }
+  #popupShopBy9 h4{
+   font-weight: bold;
+   color: #444444;
+  }
+  #popupShopBy19 h4{
+    font-weight: bold;
+    color: #444444;
+    font-size: 15px;
+      }
+  .Best-Way{
+       font-size: 15px;
+       font-weight: bold;
+     }
+  #popupShopBy19>input{
+    height: 35px;
+  }
+  #Max7days>label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #444444;
+  }
+  #box9-r>h3{
+    color: #444444;
+  }
+  #zip-post{
+    height: 25px !important;
+    
+  }
+  /* 
+   */
