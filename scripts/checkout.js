@@ -7,7 +7,7 @@ let prod_total=JSON.parse(localStorage.getItem("cart_products"));
 let cart_total=localStorage.getItem("Totalprice");
 //console.log(Totalprice);
 document.getElementById("subtotal-r").innerText=Number(cart_total).toFixed(2);
-document.getElementById("total_gst").innerText=Number(cart_total).toFixed(2);
+document.getElementById("total_gst").innerText=(Number(cart_total)+55).toFixed(2);
 
 
 function create(s)
@@ -16,7 +16,7 @@ function create(s)
 }
 var prod=JSON.parse(localStorage.getItem("cart_products"));
 console.log(prod)
-prod.forEach(function(e,i)
+prod.forEach(function(e)
 {
     let z10=create("div");
     z10.setAttribute("id","box5-r")
@@ -39,15 +39,10 @@ prod.forEach(function(e,i)
     z7.setAttribute("id","box7-r")
     let z5=create("button");
     z5.innerText='Edit';
-    let z6=document.createElement("button");
+    let z6=create("button");
     z6.innerText='Remove item';
-<<<<<<< HEAD
-    z6.addEventListener("click",function(e,i){
-       removeitem(e,i)
-=======
     z6.addEventListener("click",function(){
       del(e);
->>>>>>> 6861d2e801ab9414460051a3844e45126e6571c4
     })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
@@ -77,22 +72,37 @@ function del(e)
     
 }
 
+var flag333 = false;
+  let LetMagicBegins33 = ()=>{
+    
+    if(flag333==false){
+      document.getElementById("popupShopBy9").style.display = "block" ;
+      document.querySelector("#notcHH").textContent = " ▲";
+      flag333=true;
+    }
+    else if(flag333==true) {
+      document.getElementById("popupShopBy9").style.display = "none" ;
+      document.querySelector("#notcHH").textContent = "▼";
+      flag333=false
+    }
+    
+  }
 
-function removeitem(e,i){
-  // if(e.qty==1){
-    prod.splice(i,1)
-    console.log(prod)
-    localStorage.setItem("cart_products",JSON.stringify(prod))
-    window.location.reload()
-  // }
-  // else{
-  //   let k=Number(e.qty)
-  //   k--
-  //   e.qty=k
-  //   console.log(prod)
-  //   localStorage.setItem("cart_products",JSON.stringify(prod))
-  //   // window.location.reload()
-  // }
-  
-}
-
+  var flag444 = true;
+  let LetMagicBegins44 = ()=>{
+    
+    if(flag444==true){
+      document.getElementById("popupShopBy19").style.display = "block" ;
+      document.querySelector("#notcHH1").textContent = "▲";
+      flag444=false;
+    }
+    else if(flag444==false){
+      document.getElementById("popupShopBy19").style.display = "none" ;
+      document.querySelector("#notcHH1").textContent = "▼";
+      flag444=true
+    }
+    
+  }
+ 
+  document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
+  document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
