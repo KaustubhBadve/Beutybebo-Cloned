@@ -7,7 +7,7 @@ let prod_total=JSON.parse(localStorage.getItem("cart_products"));
 let cart_total=localStorage.getItem("Totalprice");
 //console.log(Totalprice);
 document.getElementById("subtotal-r").innerText=Number(cart_total).toFixed(2);
-document.getElementById("total_gst").innerText=Number(cart_total).toFixed(2);
+document.getElementById("total_gst").innerText=(Number(cart_total)+55).toFixed(2);
 
 
 function create(s)
@@ -16,7 +16,7 @@ function create(s)
 }
 var prod=JSON.parse(localStorage.getItem("cart_products"));
 console.log(prod)
-prod.forEach(function(e,i)
+prod.forEach(function(e)
 {
     let z10=create("div");
     z10.setAttribute("id","box5-r")
@@ -39,14 +39,19 @@ prod.forEach(function(e,i)
     z7.setAttribute("id","box7-r")
     let z5=create("button");
     z5.innerText='Edit';
-    let z6=document.createElement("button");
+    let z6=create("button");
     z6.innerText='Remove item';
+
+    z6.addEventListener("click",function(){
+      del(e);
+=======
 
     z6.addEventListener("click",function(e,i){
        removeitem(e,i)
 
     z6.addEventListener("click",function(){
       del(e);
+
 
     })
   z7.append(z5,z6);
@@ -77,7 +82,24 @@ function del(e)
     
 }
 
+var flag333 = false;
+  let LetMagicBegins33 = ()=>{
+    
+    if(flag333==false){
+      document.getElementById("popupShopBy9").style.display = "block" ;
+      document.querySelector("#notcHH").textContent = " ▲";
+      flag333=true;
+    }
+    else if(flag333==true) {
+      document.getElementById("popupShopBy9").style.display = "none" ;
+      document.querySelector("#notcHH").textContent = "▼";
+      flag333=false
+    }
+    
+  }
 
+
+=======
 var flag333 = false;
   let LetMagicBegins33 = ()=>{
     
@@ -111,6 +133,9 @@ var flag333 = false;
   }
  
   document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
+
+  document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
+=======
   document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
 
 
@@ -131,5 +156,6 @@ function removeitem(e,i){
   // }
   
 }
+
 
 
