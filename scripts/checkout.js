@@ -7,7 +7,7 @@ let prod_total=JSON.parse(localStorage.getItem("cart_products"));
 let cart_total=localStorage.getItem("Totalprice");
 //console.log(Totalprice);
 document.getElementById("subtotal-r").innerText=Number(cart_total).toFixed(2);
-document.getElementById("total_gst").innerText=(Number(cart_total)+55).toFixed(2);
+document.getElementById("total_gst").innerText=Number(cart_total).toFixed(2);
 
 
 function create(s)
@@ -16,7 +16,7 @@ function create(s)
 }
 var prod=JSON.parse(localStorage.getItem("cart_products"));
 console.log(prod)
-prod.forEach(function(e)
+prod.forEach(function(e,i)
 {
     let z10=create("div");
     z10.setAttribute("id","box5-r")
@@ -39,10 +39,15 @@ prod.forEach(function(e)
     z7.setAttribute("id","box7-r")
     let z5=create("button");
     z5.innerText='Edit';
-    let z6=create("button");
+    let z6=document.createElement("button");
     z6.innerText='Remove item';
+
+    z6.addEventListener("click",function(e,i){
+       removeitem(e,i)
+
     z6.addEventListener("click",function(){
       del(e);
+
     })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
@@ -71,6 +76,7 @@ function del(e)
     location.reload();
     
 }
+
 
 var flag333 = false;
   let LetMagicBegins33 = ()=>{
@@ -106,3 +112,24 @@ var flag333 = false;
  
   document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
   document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
+
+
+function removeitem(e,i){
+  // if(e.qty==1){
+    prod.splice(i,1)
+    console.log(prod)
+    localStorage.setItem("cart_products",JSON.stringify(prod))
+    window.location.reload()
+  // }
+  // else{
+  //   let k=Number(e.qty)
+  //   k--
+  //   e.qty=k
+  //   console.log(prod)
+  //   localStorage.setItem("cart_products",JSON.stringify(prod))
+  //   // window.location.reload()
+  // }
+  
+}
+
+

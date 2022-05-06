@@ -131,6 +131,13 @@
         .active:after {
           content: "\2212";
           }
+
+
+          #box7-r>button{
+            cursor: pointer;
+
+          }
+
   #box-rr{
     display: flex;
     justify-content: space-between;
@@ -159,7 +166,8 @@
     width:30%;
     text-align: center;
   }
-  /* //// */
+
+ 
 
   #ESTIMATENtax{
     display: flex;
@@ -247,5 +255,4 @@
     height: 25px !important;
     
   }
-  /* 
-   */
+  

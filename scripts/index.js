@@ -10,9 +10,19 @@ document.getElementById("footer").innerHTML=footer()
 
 
 document.getElementById("profilesymbol").addEventListener("click",showlogindiv)
-
+var flag=false
 function showlogindiv(){
-  document.getElementById("profile").style.display="block"
+  if(flag==false)
+  {
+    document.getElementById("profile").style.display="block"
+    flag=true
+  }
+  else if(flag=true)
+  {
+    document.getElementById("profile").style.display="none"
+    flag=false
+  }
+  
 }
 
 
@@ -40,11 +50,23 @@ showSearch(data)
   }
 }
 
+var searchflag=false
 
 function showSearch(data){
 
   document.getElementById("searchresultdiv").innerHTML=null
+
+if(searchflag==false){
   document.getElementById("searchresultdiv").style.display="block"
+  searchflag=true
+}
+else if(searchflag==true){
+  document.getElementById("searchresultdiv").style.display="none"
+  searchflag=false
+}
+
+
+ 
   data.forEach(function(elem){
 
     let main=document.createElement("div")
