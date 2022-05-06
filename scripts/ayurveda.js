@@ -265,7 +265,9 @@ let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/p
 
 
 
-function Verticalappend(){
+function Verticalappend(ayur_arr){
+
+  document.getElementById("prodlist-r").innerHTML=null;
     console.log(ayur_arr);
     ayur_arr.map(function(e,index){
      
@@ -348,7 +350,7 @@ function Verticalappend(){
     )
   }
   
-  Verticalappend();
+  Verticalappend(ayur_arr);
   
 
 
@@ -557,6 +559,78 @@ function Verticalappend(){
 
 
 
+
+
+
+
+
+
+  document.getElementById("CombiNationChecked1").addEventListener("click",as1);
+
+
+
+var b1000=[];
+var w=0;
+
+
+
+
+function as1()
+{
+  b1000=[];
+  if(w%2==0)
+  {
+    let z1=document.getElementById("CombiNationChecked1").value;
+    console.log(z1)
+if(z1==="on")
+{
+    for(let i=0;i<ayur_arr.length;++i)
+    {
+        
+        if(Number(ayur_arr[i].price)<1000)
+      {
+        b1000.push(ayur_arr[i])
+      }
+      
+    }
+    document.getElementById("prodlist-r").innerHTML=null;
+    Verticalappend(b1000);
+    console.log(b1000)
+}
+  }
+else{
+  Verticalappend(ayur_arr);
+}
+++w;
+}
+// greater than thousand
+document.getElementById("CombiNationChecked2").addEventListener("click",as2);
+var b1000=[];
+var y=0;
+function as2()
+{b1000=[];
+  if(y%2==0)
+  {
+    let z1=document.getElementById("CombiNationChecked2").value;
+if(z1==='on')
+{
+    for(let i=0;i<ayur_arr.length;++i)
+    {
+        
+        if(Number(ayur_arr[i].price)>=1000)
+      {
+        b1000.push(ayur_arr[i])
+      }
+      
+    }
+    Verticalappend(b1000);
+}
+  }
+  else{
+    Verticalappend(ayur_arr);
+  }
+++y;
+}
 
 
 
