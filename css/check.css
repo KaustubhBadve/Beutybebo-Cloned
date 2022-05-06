@@ -1,11 +1,11 @@
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 /* Top image CSS */
 
-#indextopimgdiv {
+#indextopimgdiv{
     width: 100%;
     height: 100px;
     background-image: url("https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg");
@@ -15,26 +15,24 @@ body {
     align-items: center;
     cursor: pointer;
 }
-
-#indextopimgdiv>img {
+#indextopimgdiv>img{
     width: 170px;
     height: 45px;
-    margin-right: 70px;
-
+   margin-right: 70px;
+   
 }
 
 /* Below top image CSS */
 
 
-#belowtopimgdiv {
+#belowtopimgdiv{
     display: flex;
     width: 70%;
     margin: auto;
     align-items: center;
     margin-top: 20px;
 }
-
-#belowtopimgdiv>select {
+#belowtopimgdiv>select{
     color: gray;
     width: 220px;
     height: 38px;
@@ -42,8 +40,7 @@ body {
     border: 0.2px solid rgb(221, 210, 210);
     border-right: none;
 }
-
-#belowtopimgdiv>div>input {
+#belowtopimgdiv>div>input{
     width: 320px;
     height: 34px;
     color: gray;
@@ -52,7 +49,7 @@ body {
     border-left-style: initial;
 }
 
-#searchsymbol {
+#searchsymbol{
     width: 50px;
     height: 37px;
     background-color: #dd0285;
@@ -63,40 +60,35 @@ body {
     align-items: center;
     cursor: pointer;
 }
-
-#heartsymbol {
+#heartsymbol{
     margin-left: 160px;
     width: 40px;
     height: 32px;
     font-size: 24px;
-    color: black;
+    color:black;
     text-align: center;
     padding-top: 10px;
     border: 1px solid black;
 }
-
-#heartsymbol:hover {
-    background-color: #dd0285;
+#heartsymbol:hover{
+    background-color:#dd0285 ;
     color: white;
 }
-
-#profilesymbol {
+#profilesymbol{
     width: 40px;
     height: 32px;
     font-size: 24px;
-    color: black;
+    color:black;
     text-align: center;
     padding-top: 10px;
-    border: 1px solid rgb(236, 231, 231);
-    margin-left: 20px;
+    border: 1px solid rgb(236, 231, 231); 
+    margin-left: 20px;   
 }
-
-#profilesymbol:hover {
-    background-color: #dd0285;
+#profilesymbol:hover{
+    background-color:#dd0285 ;
     color: white;
 }
-
-#acc {
+#acc{
     font-size: 15px;
     width: 90px;
     margin-left: 5px;
@@ -105,8 +97,8 @@ body {
 /* navbar  */
 
 
-.makeuphover {
-
+.makeuphover{
+   
     display: flex;
     background-color: white;
     gap: 70px;
@@ -119,51 +111,39 @@ body {
 }
 
 
-#A,
-#BB,
-#CC,
-#DD,
-#EE,
-#AA {
+#A,#BB,#CC,#DD,#EE,#AA{
     display: none;
     position: sticky;
     top: 5%;
     left: -50%;
     height: 700px;
 }
-
-#headingA,
-#headingB,
-#headingC,
-#headingD,
-#headingE {
+#headingA,#headingB,#headingC,#headingD,#headingE{
     color: black;
     font-weight: 600;
     font-size: 16px;
 }
 
 
-#navbartitle1,
-#navbartitle2,
-#navbartitle3,
-#navbartitle4,
-#navbartitle5,
-#navbartitle6,
-#navbartitle7 {
-    cursor: pointer;
+#navbartitle1,#navbartitle2,#navbartitle3,#navbartitle4,#navbartitle5,#navbartitle6,#navbartitle7{
+    color: white;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 14px;
+    padding-left :14px ;
     padding-right: 14px;
 }
-
-#navbar {
+#anchortag{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+#navbar{
     display: flex;
     width: 100%;
     height: 45px;
     background-color: #dd0285;
-    color: white;
+    
     font-weight: 600;
     font-size: 14px;
     padding-left: 100px;
@@ -171,38 +151,34 @@ body {
     align-items: center;
     padding-left: 290px;
 }
-
-#navbar>div {
+#navbar>div{
     cursor: pointer;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 14px;
+    padding-left :14px ;
     padding-right: 14px;
+    color: white;
 }
-
-#navbar>div:hover {
+#navbar>div:hover{
     background-color: #b90471;
 }
-
-#cartnavbar {
+#cartnavbar{
     margin-left: 90px;
 }
-
-#cartnavbar span {
+#cartnavbar span{
     margin-right: 5px;
-    font-size: 19px;
+    font-size: 19px; 
 }
-
-#navbar span {
+#navbar span{
     margin-left: 5px;
     font-size: 12px;
-    margin-bottom: 4PX;
+    margin-bottom: 4PX;    
 }
 
 
 
-#searchresultdiv {
+#searchresultdiv{
     display: none;
     position: absolute;
     width: 640px;
@@ -216,9 +192,9 @@ body {
 
 #searchresultdiv::-webkit-scrollbar {
     display: none;
-}
+    }
 
-#searchmain {
+#searchmain{
     width: 100%;
     height: 140px;
     /* border: 1px solid red; */
@@ -227,44 +203,38 @@ body {
     border: 1px solid gainsboro;
     overflow: hidden;
 }
-
-#searchimgdiv {
+#searchimgdiv{
     width: 23%;
     height: 100%;
-
+   
 }
-
-#searchimgdiv>img {
+#searchimgdiv>img{
     width: 100%;
     height: 100%;
 }
-
-#mergesearch {
-    width: 90%;
-    height: 100%;
-    font-size: 10px;
-    line-height: 20px;
+#mergesearch{
+width: 90%;
+height: 100%;
+font-size: 10px;
+line-height: 20px;
 }
-
-#searchdescription {
+#searchdescription{
     font-size: 10px;
     color: #757677;
     line-height: 13px;
     overflow: hidden;
 }
-
-#searchname {
+#searchname{
     font-size: 15px;
     font-weight: 600;
 }
-
-#brandname {
+#brandname{
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
 }
 
-#profile {
+#profile{
     display: none;
     width: 90px;
     height: 60px;
@@ -276,13 +246,11 @@ body {
     padding: 4px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
-#profile>div {
+#profile>div{
     cursor: pointer;
     margin-bottom: 10px;
 }
-
-#profile>div:hover {
+#profile>div:hover{
     color: #b90471;
 }
 
@@ -293,7 +261,7 @@ body {
 
 /* footer */
 
-#topdownfooter {
+#topdownfooter{
     background-color: black;
     color: rgb(180, 169, 169);
     height: 34px;
@@ -302,35 +270,30 @@ body {
     justify-content: center;
     font-size: 14px;
 }
-
-footer {
+footer{
     background-color: #232323;
 }
-
-#footertop {
-
+#footertop{
+   
     /* color: #91897e; */
     width: 100%;
     height: 350px;
     width: 71%;
     margin: auto;
 }
-
-#secondlastfooterdiv {
+#secondlastfooterdiv{
     display: flex;
     justify-content: space-between;
     padding: 7px;
 }
-
-#footerinput {
+#footerinput{
     display: flex;
     font-size: 16px;
     align-items: center;
     color: white;
     font-weight: 600;
 }
-
-#footerinput input {
+#footerinput input{
     width: 290px;
     height: 40px;
     border-radius: 3px;
@@ -339,13 +302,11 @@ footer {
     color: gray;
     margin-left: 20px;
 }
-
-#footersecondlastimg {
+#footersecondlastimg{
     width: 300px;
     height: 34px;
 }
-
-#subscribe {
+#subscribe{
     background-color: #dd0285;
     height: 42px;
     width: 100px;
@@ -355,63 +316,55 @@ footer {
     font-size: 14px;
     cursor: pointer;
 }
-
-#subscribe:hover {
+#subscribe:hover
+{
     background-color: #f566bc;
 }
-
-hr {
+hr{
     height: 1px;
     color: white;
     width: 100%;
     background-color: whitesmoke;
 }
 
-#footertopfirst {
+#footertopfirst{
     display: flex;
     gap: 150px;
 }
 
-#foothead {
+#foothead{
     color: whitesmoke;
     font-weight: 600;
     font-size: 14px;
     margin-top: 20px;
 }
-
-.color {
+.color{
     color: #9ca4aa;
     font-size: 13px;
 }
-
-.o1ne {
+.o1ne{
     margin-top: 20px;
     font-size: 13px;
 }
-
-.o2ne {
+.o2ne{
     margin-top: 30px;
     font-size: 13px;
 }
-
-.o3ne {
+.o3ne{
     margin-top: 10px;
     font-size: 13px;
 }
-
-.o4ne {
+.o4ne{
     margin-top: 30px;
     font-size: 13px;
 }
-
-#insta {
+#insta{
     display: flex;
     margin-top: 20px;
     margin-bottom: 22px;
-
+ 
 }
-
-#facebook {
+#facebook{
     width: 30px;
     height: 30px;
     display: flex;
@@ -423,8 +376,7 @@ hr {
     margin-right: 15px;
     cursor: pointer;
 }
-
-#footertopfirst ul {
+#footertopfirst ul{
     color: #9ca4aa;
     font-size: 15px;
     line-height: 26px;
@@ -438,21 +390,161 @@ hr {
 #navbar a.active {
     background-color: #04AA6D;
     color: white;
-}
-
-.content {
+  }
+  
+  .content {
     padding: 16px;
-}
-
-.sticky {
+  }
+  
+  .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  #login{
+    text-decoration: none;
+    color: black;
+}
+#login:hover{
+    color: #b90471;
 }
 
-.sticky+.content {
-    padding-top: 60px;
+
+
+
+
+#cartproductlist{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 76%;
+    width: 360px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#product_lists{
+width: 98%;
+height: 350px;
+overflow: scroll;
+margin: auto;
+}
+
+#product_lists::-webkit-scrollbar {
+  display: none;
+  }
+
+#totalcartpricing{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 13px;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 10px;
+}    
+#btncartmain{
+  display: flex;
+  justify-content: space-evenly;
+}
+#btncartmain>button{
+background-color: #dd0285;
+color: whitesmoke;
+font-weight: 600;
+border: none;
+border-radius: 4px;
+width: 120px;
+height: 50px;
+font-size: 15px;
+margin-top: 14px;
+}
+
+#mainnnn{
+  width: 100%;
+  height: 100PX;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  
+}
+#imgdivcart{
+  width: 25% ;
+  height: 100% ;
+ 
+}
+#imgdivcart>img{
+  width: 100%;
+  height: 100%;
+}
+#besideimgmain{
+  width: 75%;
+  height: 98%;
+  padding: 4px;
+  font-size: 15px;
+  line-height: 30PX;
+}
+#cartprodtitle{
+  color: gray;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+}
+#qtydiv{
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin-bottom: 5px;
+}
+#qtybox{
+  width: 24px;
+  height: 24px;
+  border: 0.3px solid rgb(173, 161, 161);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -589,7 +681,7 @@ input{
 #CCA{
     margin-left: 10px;
 }
-#cartproductlist{
+#cartproductlist,cartproductlistt{
     /* display: none;
     position: absolute;
     top: 55%;

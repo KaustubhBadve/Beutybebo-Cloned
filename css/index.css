@@ -126,19 +126,24 @@ body{
 
 
 #navbartitle1,#navbartitle2,#navbartitle3,#navbartitle4,#navbartitle5,#navbartitle6,#navbartitle7{
-    cursor: pointer;
+    color: white;
     height: 100%;
     display: flex;
     align-items: center;
     padding-left :14px ;
     padding-right: 14px;
 }
+#anchortag{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
 #navbar{
     display: flex;
     width: 100%;
     height: 45px;
     background-color: #dd0285;
-    color: white;
+    
     font-weight: 600;
     font-size: 14px;
     padding-left: 100px;
@@ -153,6 +158,7 @@ body{
     align-items: center;
     padding-left :14px ;
     padding-right: 14px;
+    color: white;
 }
 #navbar>div:hover{
     background-color: #b90471;
@@ -399,6 +405,109 @@ hr{
   .sticky + .content {
     padding-top: 60px;
   }
+
+  #login{
+    text-decoration: none;
+    color: black;
+}
+#login:hover{
+    color: #b90471;
+}
+
+
+
+
+
+#cartproductlist{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 76%;
+    width: 360px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#product_lists{
+width: 98%;
+height: 350px;
+overflow: scroll;
+margin: auto;
+}
+
+#product_lists::-webkit-scrollbar {
+  display: none;
+  }
+
+#totalcartpricing{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 13px;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 10px;
+}    
+#btncartmain{
+  display: flex;
+  justify-content: space-evenly;
+}
+#btncartmain>button{
+background-color: #dd0285;
+color: whitesmoke;
+font-weight: 600;
+border: none;
+border-radius: 4px;
+width: 120px;
+height: 50px;
+font-size: 15px;
+margin-top: 14px;
+}
+
+#mainnnn{
+  width: 100%;
+  height: 100PX;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  
+}
+#imgdivcart{
+  width: 25% ;
+  height: 100% ;
+ 
+}
+#imgdivcart>img{
+  width: 100%;
+  height: 100%;
+}
+#besideimgmain{
+  width: 75%;
+  height: 98%;
+  padding: 4px;
+  font-size: 15px;
+  line-height: 30PX;
+}
+#cartprodtitle{
+  color: gray;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+}
+#qtydiv{
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin-bottom: 5px;
+}
+#qtybox{
+  width: 24px;
+  height: 24px;
+  border: 0.3px solid rgb(173, 161, 161);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-left: 10px;
+}
 
 
 

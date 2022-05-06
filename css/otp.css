@@ -1,0 +1,145 @@
+
+
+    body{
+       font-family: 'IBM Plex Sans', sans-serif;;
+   }
+   *>button{
+       cursor: pointer;
+   }
+   #container{
+       width: 40%;
+       height: 580px;
+       margin: auto;
+       margin-top: 60px;
+   }
+   #img{
+       width: 100%;
+       height: 15%;
+       display: flex;
+       border: 1px solid #e0e0e0;
+       justify-content: space-between
+   }
+   #img>div{
+       width: 110px;
+       height: 65%;
+       padding: 20px;
+   }
+   #img>div>img{
+       width: 100%;
+       height: 100%;
+   }
+   #img2{
+       margin-right: 40px;
+   }
+   #merchant{
+       width: 100%;
+       height: 15%;
+       display: flex;
+       justify-content: space-between;
+   }
+   #subdiv{
+       padding-left: 20px;
+       padding-top: 8px;
+   }
+   #subdiv2{
+       margin-left: 50px;
+       padding-top: 8px;
+       margin-right: 70px;
+   }
+   #otp{
+       width: 97%;
+       height: auto;
+       border: 1px solid #e0e0e0;
+       padding-left: 20px;
+   }
+   #Authentic{
+       color: #0b4972;
+       font-weight: 700;
+       padding-top: 8px;
+       font-size: large;
+   }
+   #Authentic+div{
+       margin-top: 8px;
+   }
+   #Authentic+div+p{
+           margin-top: 19px;
+   }
+   #ip{
+       display: flex;
+       justify-content: space-between;
+   }
+   div>input{
+       width: 250px;
+       height: 41px;
+       border:1px solid #8b8787; 
+       border-radius: 4px;
+   }
+   div>button{
+       width: 160px;
+       height: 41px;
+       background-color: #f2c962;
+       border: 1px solid #997415;
+       border-radius: 4px;
+       margin-right: 40px;
+       font-size: 15px;
+       font-weight:540;
+   }
+   #error{
+       display: flex;
+       justify-content: space-around;
+       font-size: 17px;
+       font-weight:540;
+       margin-top: 8px;
+   }
+   #resend{
+      margin-left: 220px;
+      cursor: pointer;
+   }
+   #resend+p{
+       color: #369be8;
+   }
+   #PCI{
+        margin-left: 400px;
+        padding: 10px;
+        padding-right: 7px;
+        font-size: 13px;
+   }
+   #last{
+       text-align: justify;
+       padding: 20px;
+       border: 1px solid #e0e0e0;
+       font-size: 13px;
+       font-weight: 500;
+   }
+   #red{
+       color: #cc000a;
+       font-weight: 600px;
+   }
+  #errorMsg{
+      color: #cc000a;
+  }
+  #spinner {
+position: fixed;
+top: 0; left: 0;
+width: 100vw; height: 100vh;
+z-index: 9999;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 0.2s;
+}
+
+/* (B) CENTER LOADING SPINNER */
+#spinner img {
+position: absolute;
+top: 50%; left: 50%;
+transform: translate(-50%);
+}
+
+/* (C) SHOW & HIDE */
+#spinner {
+visibility: hidden;
+opacity: 0;
+}
+#spinner.show {
+visibility: visible;
+opacity: 1;
+}

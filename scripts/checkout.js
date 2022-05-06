@@ -41,8 +41,18 @@ prod.forEach(function(e)
     z5.innerText='Edit';
     let z6=create("button");
     z6.innerText='Remove item';
+
     z6.addEventListener("click",function(){
       del(e);
+=======
+
+    z6.addEventListener("click",function(e,i){
+       removeitem(e,i)
+
+    z6.addEventListener("click",function(){
+      del(e);
+
+
     })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
@@ -88,6 +98,24 @@ var flag333 = false;
     
   }
 
+
+=======
+var flag333 = false;
+  let LetMagicBegins33 = ()=>{
+    
+    if(flag333==false){
+      document.getElementById("popupShopBy9").style.display = "block" ;
+      document.querySelector("#notcHH").textContent = " ▲";
+      flag333=true;
+    }
+    else if(flag333==true) {
+      document.getElementById("popupShopBy9").style.display = "none" ;
+      document.querySelector("#notcHH").textContent = "▼";
+      flag333=false
+    }
+    
+  }
+
   var flag444 = true;
   let LetMagicBegins44 = ()=>{
     
@@ -105,4 +133,29 @@ var flag333 = false;
   }
  
   document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
+
   document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
+=======
+  document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
+
+
+function removeitem(e,i){
+  // if(e.qty==1){
+    prod.splice(i,1)
+    console.log(prod)
+    localStorage.setItem("cart_products",JSON.stringify(prod))
+    window.location.reload()
+  // }
+  // else{
+  //   let k=Number(e.qty)
+  //   k--
+  //   e.qty=k
+  //   console.log(prod)
+  //   localStorage.setItem("cart_products",JSON.stringify(prod))
+  //   // window.location.reload()
+  // }
+  
+}
+
+
+

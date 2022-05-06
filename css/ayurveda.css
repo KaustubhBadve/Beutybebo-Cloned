@@ -603,12 +603,24 @@ margin-top: 14px;
     align-items: center;
  margin-left: 10px;
 }
-/* #popupShopBy{
-    border: 3px solid;
+#popupShopBy{
+    /* border: 3px solid; */
     width: 220px;
     height: auto;
     display: none;
-} */
+}
+#popupShopBy2{
+    /* border: 3px solid; */
+    width: 220px;
+    height: auto;
+    display: none;
+}
+#popupShopBy3{
+    /* border: 3px solid; */
+    width: 220px;
+    height: auto;
+    display: none;
+}
 #skinTypeWP{
     display: flex;
     justify-content: space-between;
