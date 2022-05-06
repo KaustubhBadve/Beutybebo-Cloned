@@ -26,7 +26,8 @@ let res=await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=
 
 let data=await res.json()
 
-console.log(data)
+
+console.log('data:', data)
 showSearch(data)
 
   }catch(err)
@@ -459,6 +460,64 @@ for(let i=0;i<cart_product.length;i++)
   }
 
   Cartelementshow()
+
+  
+  
+  let flag = true;
+  let LetMagicBegins = ()=>{
+    let babba = document.getElementById("popupShopBy");
+    let BtN = document.querySelector("#plusSignforPop");
+    if(flag==true){
+      babba.style.display = "block" ;
+      BtN.textContent = "-";
+      flag=false;
+    }
+    else{
+      babba.style.display = "none" ;
+      BtN.textContent = "+";
+      flag=true
+    }
+    
+  }
+  //
+  let flag2 = true;
+  let LetMagicBegins2 = ()=>{
+    let babba2 = document.getElementById("popupShopBy2");
+    let BtN2 = document.querySelector("#plusSignforPop2");
+    if(flag2==true){
+      babba2.style.display = "block" ;
+      BtN2.textContent = "-";
+      flag2=false;
+    }
+    else{
+      babba2.style.display = "none" ;
+      BtN2.textContent = "+";
+      flag2=true
+    }
+    
+  }
+  //
+  let flag3 = true;
+  let LetMagicBegins3 = ()=>{
+    let babba3 = document.getElementById("popupShopBy3");
+    let BtN3 = document.querySelector("#plusSignforPop3");
+    if(flag3==true){
+      babba3.style.display = "block" ;
+      BtN3.textContent = "-";
+      flag3=false;
+    }
+    else{
+      babba3.style.display = "none" ;
+      BtN3.textContent = "+";
+      flag3=true
+    }
+    
+  }
+  // LetMagicBegins();
+  document.querySelector("#plusSignforPop").addEventListener("click",LetMagicBegins);
+  document.querySelector("#plusSignforPop2").addEventListener("click",LetMagicBegins2);
+  document.querySelector("#plusSignforPop3").addEventListener("click",LetMagicBegins3);
+
 
 
 
