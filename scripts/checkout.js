@@ -41,13 +41,13 @@ prod.forEach(function(e,i)
     z5.innerText='Edit';
     let z6=document.createElement("button");
     z6.innerText='Remove item';
-<<<<<<< HEAD
+
     z6.addEventListener("click",function(e,i){
        removeitem(e,i)
-=======
+
     z6.addEventListener("click",function(){
       del(e);
->>>>>>> 6861d2e801ab9414460051a3844e45126e6571c4
+
     })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
@@ -78,6 +78,42 @@ function del(e)
 }
 
 
+var flag333 = false;
+  let LetMagicBegins33 = ()=>{
+    
+    if(flag333==false){
+      document.getElementById("popupShopBy9").style.display = "block" ;
+      document.querySelector("#notcHH").textContent = " ▲";
+      flag333=true;
+    }
+    else if(flag333==true) {
+      document.getElementById("popupShopBy9").style.display = "none" ;
+      document.querySelector("#notcHH").textContent = "▼";
+      flag333=false
+    }
+    
+  }
+
+  var flag444 = true;
+  let LetMagicBegins44 = ()=>{
+    
+    if(flag444==true){
+      document.getElementById("popupShopBy19").style.display = "block" ;
+      document.querySelector("#notcHH1").textContent = "▲";
+      flag444=false;
+    }
+    else if(flag444==false){
+      document.getElementById("popupShopBy19").style.display = "none" ;
+      document.querySelector("#notcHH1").textContent = "▼";
+      flag444=true
+    }
+    
+  }
+ 
+  document.querySelector("#plusSignforPopY").addEventListener("click",LetMagicBegins33);
+  document.querySelector("#plusSignforPopZ").addEventListener("click",LetMagicBegins44);
+
+
 function removeitem(e,i){
   // if(e.qty==1){
     prod.splice(i,1)
@@ -95,4 +131,5 @@ function removeitem(e,i){
   // }
   
 }
+
 

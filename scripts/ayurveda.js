@@ -509,7 +509,7 @@ function Verticalappend(){
       BtN.textContent = "-";
       flaggg=false;
     }
-    else{
+    else if(flag==false){
       babba.style.display = "none" ;
       BtN.textContent = "+";
       flaggg=true
