@@ -231,6 +231,140 @@ function myFunctionn() {
 
 
 
+let totalcart=localStorage.getItem("Totalprice")
+
+
+document.getElementById("cartvalue").innerHTML= totalcart || 0 
+
+document.getElementById("totalpriceofallproduct").innerHTML= ("₹ "+ totalcart+".00") || 0 
+
+
+
+let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
+
+
+function Cartelementshow(){
+
+document.getElementById("product_lists").innerHTML=null;
+
+productlist_cart.forEach(function(elem){
+
+let mainnnn=document.createElement("div")
+mainnnn.setAttribute("id","mainnnn")
+
+let imgdivCart=document.createElement("div")
+imgdivCart.setAttribute("id","imgdivcart")
+
+let imgcart=document.createElement("img")
+imgcart.src=elem.img
+
+imgdivCart.append(imgcart)
+
+let besideimgmain=document.createElement("div")
+besideimgmain.setAttribute("id","besideimgmain")
+
+let cartprodtitle=document.createElement("div")
+cartprodtitle.innerText=elem.title
+cartprodtitle.setAttribute("id","cartprodtitle")
+
+let cartprodprice=document.createElement("div")
+cartprodprice.innerText="₹ "+elem.price+".00"
+cartprodprice.setAttribute("id","cartprdprice")
+
+let qtydiv=document.createElement("div")
+qtydiv.setAttribute("id","qtydiv")
+
+let qtycart=document.createElement("div")
+qtycart.innerText="QTY : "
+qtycart.setAttribute("id","qtycart")
+
+let qtybox=document.createElement("div")
+qtybox.innerText=elem.qty;
+qtybox.setAttribute("id","qtybox")
+
+qtydiv.append(qtycart,qtybox)
+
+besideimgmain.append(cartprodtitle,cartprodprice,qtydiv)
+
+mainnnn.append(imgdivCart,besideimgmain)
+
+document.getElementById("product_lists").append(mainnnn)
+
+})
+}
+
+document.getElementById("cartnavbar").addEventListener("click",toshowcartproduct)
+
+var cartelemflag=false
+
+function toshowcartproduct(){
+  if(cartelemflag==false){
+    document.getElementById("cartproductlist").style.display="block"
+    cartelemflag=true
+  }
+ else if(cartelemflag==true)
+ {
+  document.getElementById("cartproductlist").style.display="none"
+  cartelemflag=false
+ }
+}
+
+
+
+var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
+let price=localStorage.getItem("Totalprice") || 0
+
+
+
+function addcart(e)
+{
+ 
+var p=0;
+for(let i=0;i<cart_product.length;i++)
+{
+if(cart_product[i].title===e.title)
+{
+  let K=cart_product[i].qty;
+  K=Number(K)+1;
+  cart_product[i].qty=K;
+  var pric=cart_product[i].price;
+  ++p;
+}
+}   
+if(p==0)
+ {cart_product.push(e);
+  price=parseInt(price)+parseInt(e.price)
+  document.getElementById("cartaddconfirmation").style.display="block"
+  document.getElementById("main-r").style.marginTop="-290px"
+  document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
+ 
+ 
+  setTimeout(function(){
+
+    document.getElementById("cartaddconfirmation").style.display="none"
+    document.getElementById("main-r").style.marginTop="00px"
+    window.location.reload()
+
+  },5000)
+
+  localStorage.setItem("Totalprice",price)
+  
+  localStorage.setItem("cart_products",JSON.stringify(cart_product));
+}
+else if(p!=0){
+  price=parseInt(price)+parseInt(pric);
+  localStorage.setItem("Totalprice",price);
+  localStorage.setItem("cart_products",JSON.stringify(cart_product));
+  Cartelementshow();
+  window.location.reload();
+}
+}
+
+Cartelementshow()
+
+
+
+
 
 
 
@@ -274,13 +408,13 @@ document.getElementById("cartitem").innerText="  "+cartitem.length
 
 
 
-let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
+let productlist_cartt=JSON.parse(localStorage.getItem("cart_products"))
 
-function Cartelementshow(){
+function CCartelementshoww(){
 
-    document.getElementById("product_lists").innerHTML=null;
+    document.getElementById("product_listss").innerHTML=null;
      
-    productlist_cart.forEach(function(elem){
+    productlist_cartt.forEach(function(elem){
     
     let mainnnn=document.createElement("div")
     mainnnn.setAttribute("id","mainnnn")
@@ -321,28 +455,26 @@ function Cartelementshow(){
     
     mainnnn.append(imgdivCart,besideimgmain)
     
-    document.getElementById("product_lists").append(mainnnn)
+    document.getElementById("product_listss").append(mainnnn)
     
     })
       }
     
-      document.getElementById("sidediv").addEventListener("click",toshowcartproduct)
+      document.getElementById("sidediv").addEventListener("click",toshowcartproductt)
     
 
 
      var flag=false
 
-      function toshowcartproduct(){
+      function toshowcartproductt(){
           if(flag==false){
-            document.getElementById("cartproductlist").style.display="block"
-            document.getElementById("secondbig").style.height="auto"
-            Cartelementshow()
+            document.getElementById("cartproductlistt").style.display="block"
+            CCartelementshoww()
             flag=true
           }
         else if(flag==true)
         {
-            document.getElementById("cartproductlist").style.display="none"
-            document.getElementById("secondbig").style.height="auto"
+            document.getElementById("cartproductlistt").style.display="none"
             flag=false
         }
       }
@@ -407,6 +539,145 @@ function Cartelementshow(){
         }
         
       }
+
+
+
+      document.getElementById("CODD").addEventListener("click",funCOD)
+
+function funCOD(){
+  document.getElementById("loadinggifdiv").style.display="block"
+
+  document.getElementById("outermost").style.opacity="0.2"
+  setTimeout(function(){
+    
+    window.location.href="confirmed.html"
+  },4000)
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector("#CODNOt").addEventListener("click",popup);
+
+function popup()
+{
+    document.getElementById("popkunal").style.display="block";
+    document.getElementById("outermost").style.opacity="0.2"
+    document.getElementById("popkunal").style.zIndex="1"
+    document.getElementById("outermost").style.zIndex="-1"
+}
+
+document.querySelector("#cross-k").addEventListener("click",cross);
+function cross()
+{
+    document.getElementById("popkunal").style.display="none";
+    document.getElementById("outermost").style.opacity="1";
+    window.location.reload()
+}
+
+
+document.getElementById("www").addEventListener("click",payment);
+
+function payment()
+{
+    document.getElementById("paymentoption-text").innerText=null;
+    document.getElementById("paymentoption-text").innerText="CARDS(CREDIT/DEBIT)";
+    document.getElementById("hello").innerHTML=null;
+    console.log("HIIII")
+    append()
+}
+
+
+
+
+function append()
+{   
+    let div= document.createElement("div")
+    div.setAttribute("id","lowerbox-k")
+
+    // NEW CARD
+    let newcard=document.createElement("p");
+    newcard.innerText="New Card";
+    let input1=document.createElement("input");
+
+
+    let div1=document.createElement("div");
+        // EXPIRY 
+    let div1a=document.createElement("div");
+    let expiry=document.createElement("p");
+    expiry.innerText="Expiry";
+    let input2=document.createElement("input");
+    div1a.append(expiry,input2);
+
+        // CVV
+    let div1b=document.createElement("div");
+    let cvv=document.createElement("p");
+    cvv.innerText="CVV";
+    let input3=document.createElement("input");
+    div1b.append(cvv,input3);
+
+    div1.append(div1a,div1b);
+    // div1.
+
+    // NAME ON CARD
+
+    let nameoncard=document.createElement("p");
+    nameoncard.innerText=("Name On Card")
+    let input4=document.createElement("input");
+
+let kunal=document.createElement("div")
+    var checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute("class", "check");
+
+    let secure=document.createElement("p");
+    secure.innerText="Secure this option for faster checkouts";
+    kunal.append(checkbox,secure);
+    kunal.setAttribute("id","kunal")
+
+    // BUTTON
+    let btndiv=document.createElement("div")
+    let btn=document.createElement("button");
+    btn.addEventListener("click",function(){
+      window.location.href="otp.html"
+    })
+    btn.setAttribute("id","Proceedbtn")
+    btn.innerText="PROCEED"
+    btndiv.append(btn);
+
+    
+
+    div.append(newcard,input1,div1,nameoncard,input4,kunal,btndiv)
+
+    document.querySelector("#hello").append(div)
+    
+}
+
+
+
+
+
+let totalprice=localStorage.getItem("Totalprice")
+
+document.getElementById("paumenttotalrs").innerText="₹ "+totalprice
      
       
 

@@ -243,9 +243,136 @@ function myFunctionn() {
 
 
 
+let totalcart=localStorage.getItem("Totalprice")
+
+
+document.getElementById("cartvalue").innerHTML= totalcart || 0 
+
+document.getElementById("totalpriceofallproduct").innerHTML= ("₹ "+ totalcart+".00") || 0 
 
 
 
+let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
+
+
+function Cartelementshow(){
+
+document.getElementById("product_lists").innerHTML=null;
+
+productlist_cart.forEach(function(elem){
+
+let mainnnn=document.createElement("div")
+mainnnn.setAttribute("id","mainnnn")
+
+let imgdivCart=document.createElement("div")
+imgdivCart.setAttribute("id","imgdivcart")
+
+let imgcart=document.createElement("img")
+imgcart.src=elem.img
+
+imgdivCart.append(imgcart)
+
+let besideimgmain=document.createElement("div")
+besideimgmain.setAttribute("id","besideimgmain")
+
+let cartprodtitle=document.createElement("div")
+cartprodtitle.innerText=elem.title
+cartprodtitle.setAttribute("id","cartprodtitle")
+
+let cartprodprice=document.createElement("div")
+cartprodprice.innerText="₹ "+elem.price+".00"
+cartprodprice.setAttribute("id","cartprdprice")
+
+let qtydiv=document.createElement("div")
+qtydiv.setAttribute("id","qtydiv")
+
+let qtycart=document.createElement("div")
+qtycart.innerText="QTY : "
+qtycart.setAttribute("id","qtycart")
+
+let qtybox=document.createElement("div")
+qtybox.innerText=elem.qty;
+qtybox.setAttribute("id","qtybox")
+
+qtydiv.append(qtycart,qtybox)
+
+besideimgmain.append(cartprodtitle,cartprodprice,qtydiv)
+
+mainnnn.append(imgdivCart,besideimgmain)
+
+document.getElementById("product_lists").append(mainnnn)
+
+})
+}
+
+document.getElementById("cartnavbar").addEventListener("click",toshowcartproduct)
+
+var cartelemflag=false
+
+function toshowcartproduct(){
+  if(cartelemflag==false){
+    document.getElementById("cartproductlist").style.display="block"
+    cartelemflag=true
+  }
+ else if(cartelemflag==true)
+ {
+  document.getElementById("cartproductlist").style.display="none"
+  cartelemflag=false
+ }
+}
+
+
+
+var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
+let price=localStorage.getItem("Totalprice") || 0
+
+
+
+function addcart(e)
+{
+ 
+var p=0;
+for(let i=0;i<cart_product.length;i++)
+{
+if(cart_product[i].title===e.title)
+{
+  let K=cart_product[i].qty;
+  K=Number(K)+1;
+  cart_product[i].qty=K;
+  var pric=cart_product[i].price;
+  ++p;
+}
+}   
+if(p==0)
+ {cart_product.push(e);
+  price=parseInt(price)+parseInt(e.price)
+  document.getElementById("cartaddconfirmation").style.display="block"
+  document.getElementById("main-r").style.marginTop="-290px"
+  document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
+ 
+ 
+  setTimeout(function(){
+
+    document.getElementById("cartaddconfirmation").style.display="none"
+    document.getElementById("main-r").style.marginTop="00px"
+    window.location.reload()
+
+  },5000)
+
+  localStorage.setItem("Totalprice",price)
+  
+  localStorage.setItem("cart_products",JSON.stringify(cart_product));
+}
+else if(p!=0){
+  price=parseInt(price)+parseInt(pric);
+  localStorage.setItem("Totalprice",price);
+  localStorage.setItem("cart_products",JSON.stringify(cart_product));
+  Cartelementshow();
+  window.location.reload();
+}
+}
+
+Cartelementshow()
 
 
 

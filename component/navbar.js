@@ -4,7 +4,7 @@ function header(){
         
 
         <div id="belowtopimgdiv">
-            <div><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></div>
+        <div><a href="index.html"><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></a> </div>
             <select name="" id="" aria-placeholder="All Categories">
                 <option value="">All Categories</option>
                 <option value="">--Makeup</option>
@@ -61,19 +61,13 @@ function header(){
     
        
         <div id="navbar">
-        <div>
-        <div id="navbartitle1">MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div>
-        </div>
-
-       
-
-        
+        <div><div id="navbartitle1">MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div></div>
     <div> <div id="navbartitle2">SKIN <span><i class="fa-solid fa-angle-down"></i></span></div></div>
     <div> <div id="navbartitle3">HAIR <span><i class="fa-solid fa-angle-down"></i></span></div></div>
     <div><div id="navbartitle4">PERSONAL CARE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
-    <div><div id="navbartitle5">MOM & BABY CARE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
-    <div> <div id="navbartitle">FRAGRANCE <span><i class="fa-solid fa-angle-down"></i></span></div></div>
-    <div> <div id="navbartitle6">AYURVEDA <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div><div id="navbartitle5"><a id="anchortag" href="mom_baby.html">MOM & BABY CARE</a> <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle"><a id="anchortag" href="fragrance.html">FRAGRANCE</a>  <span><i class="fa-solid fa-angle-down"></i></span></div></div>
+    <div> <div id="navbartitle6"><a id="anchortag" href="ayurveda.html">AYURVEDA </a><span><i class="fa-solid fa-angle-down"></i></span>   </div></div>
     <div> <div id="navbartitle7">BRANDS <span><i class="fa-solid fa-angle-down"></i></span></div></div>
         <div id="cartnavbar"><span><i class="fa-solid fa-bag-shopping"></i></span> MY CART -₹ <p id="cartvalue"> </p></div>
     </div>
@@ -371,13 +365,38 @@ function header(){
 
 
     <div id="profile">
-    <div><a href="login.html">Login</a></div>
-    <div><a href="signup.html">Register</a></div>
+    <div><a href="login.html" id="login">Login</a></div>
+    <div><a href="signup.html" id="login">Register</a></div>
 </div>
 
 <div id="searchresultdiv">
 
 </div>
+
+
+
+
+
+<div id="cartproductlist">
+<div id="product_lists"></div>
+
+<div id="totalcartpricing">
+    <div>Cart Subtotal :</div>
+    <div id="totalpriceofallproduct"></div>
+</div>
+
+<div id="btncartmain">
+    <button><a href="checkout.html">View Cart</a></button>
+    <button><a href="check.html"> Checkout</a></button>
+</div>
+</div>
+
+
+
+
+
+
+
 
     `
 }
