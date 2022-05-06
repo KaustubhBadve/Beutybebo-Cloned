@@ -7,17 +7,8 @@ let prod_total=JSON.parse(localStorage.getItem("cart_products"));
 let cart_total=localStorage.getItem("Totalprice");
 //console.log(Totalprice);
 document.getElementById("subtotal-r").innerText=Number(cart_total).toFixed(2);
-document.getElementById("total_gst").innerText=(Number(cart_total)+55).toFixed(2);
+document.getElementById("total_gst").innerText=Number(cart_total).toFixed(2);
 
-{/* <div id="box6-r">
-<!-- <div id="box5-r"> -->
-  <img id="img1" alt="">
-<!-- </div> -->
-<p id="prod_name">MISS CLAIRE EYELASH GLUE - CLEAR TONE</p>
-<p id="prod_price">₹322.00</p>
-<p id="prod_qty">1</p>
-<p id="prod_tot">₹322.00</p>
-</div> */}
 
 function create(s)
 {
@@ -50,13 +41,41 @@ prod.forEach(function(e,i)
     z5.innerText='Edit';
     let z6=document.createElement("button");
     z6.innerText='Remove item';
+<<<<<<< HEAD
     z6.addEventListener("click",function(e,i){
        removeitem(e,i)
+=======
+    z6.addEventListener("click",function(){
+      del(e);
+>>>>>>> 6861d2e801ab9414460051a3844e45126e6571c4
     })
   z7.append(z5,z6);
     document.getElementById("box6-rr").append(z11,z7);
-
 })
+function del(e)
+{
+    for(let i=0;i<prod.length;++i)
+    {
+      if(prod[i].title==e.title)
+      {
+        if(e.qty==1)
+        prod.splice(i,1);
+        else
+        {
+          let k=Number(e.qty);
+          --k;
+          prod[i].qty=k;
+        }
+      }
+      
+    }
+    var total=localStorage.getItem("Totalprice");
+    total=Number(total)-Number(e.price);
+    localStorage.setItem("Totalprice",total);
+    localStorage.setItem("cart_products",JSON.stringify(prod))
+    location.reload();
+    
+}
 
 
 function removeitem(e,i){

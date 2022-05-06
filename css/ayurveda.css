@@ -603,3 +603,49 @@ margin-top: 14px;
     align-items: center;
  margin-left: 10px;
 }
+/* #popupShopBy{
+    border: 3px solid;
+    width: 220px;
+    height: auto;
+    display: none;
+} */
+#skinTypeWP{
+    display: flex;
+    justify-content: space-between;
+}
+#ageTypeWP{
+    display: flex;
+    justify-content: space-between;
+}
+#priceTypeWP{
+    display: flex;
+    justify-content: space-between;
+}
+#XTypeWP{
+    display: flex;
+    justify-content: space-between;
+}
+#plusSignforPop{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: gray;
+    }
+#plusSignforPop2{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: gray;
+    }
+#plusSignforPop3{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: gray;
+    }    
+#plusSignforPopX{
+border: none;
+background-color: white;
+font-size: 20px;
+color: gray;
+}

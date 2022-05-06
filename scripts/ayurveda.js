@@ -35,7 +35,8 @@ let res=await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=
 
 let data=await res.json()
 
-console.log(data)
+
+console.log('data:', data)
 showSearch(data)
 
   }catch(err)
@@ -260,8 +261,8 @@ function myFunctionn() {
 let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/8/18_12_3.jpg","price":"285","title":"Vaadi Herbals Aloe Vera Face Scrub","qty":"1"}
 ,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/7/17_14_4.jpg","price":"320","title":"Vaadi Herbals 24 Carat Gold Massage Gel With 24 Carat Gold Dust & Grape","qty":"1"}
 ,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o45.jpg","price":"450","title":"O3+ Volcano Scrub","qty":"1"},
-{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o41_1.jpg","price":"431","title":"O3+ Milk Scrub Dry Skin Dermal Zone"},
-{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/8/288.jpg","price":"260","title":"Himalaya Herbals Oil-Free Radiance Gel Cream"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/7/s7.jpg","price":"640","title":"Shahnaz Husain Shalocks Plus Ayurvedic Hair Oil"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/1/s1_1.jpg","price":"1734","title":"Shahnaz Husain Gold 2-In-1 Anti Ageing Gel"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/a/la9.jpg","price":"400","title":"L'Oreal Paris White Perfect Scrub"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b28.jpg","price":"199","title":"Biotique Bio Sea Weed Revitalizing Anti Fatigue Eye Gel"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b25.jpg","price":"599","title":"Bioderma Atoderm Intensive Gel Moussant"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/1/c1.jpg","price":"1070","title":"Cetaphil Sun SPF 30 Light Gel"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/3/b3.jpg","price":"338","title":"Biotique Advanced Organics Tea Tree Targeted Skin Clearing Gel"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/j/6/j6.jpg","price":"170","title":"Joy Hydra Refresh Ultra Light Gel Moisturiser"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be106.jpg","price":"394","title":"Beeone Papaya Scrub"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be102_1.jpg","price":"210","title":"Beeone Papaya Facial Gel"},{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be100.jpg","price":"248","title":"Beeone Oxygen Facial Gel"},{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be97.jpg","price":"210","title":"Beeone Orange Facial Gel"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be95.jpg","price":"394","title":"Beeone Neem Scrub"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be93.jpg","price":"230","title":"Beeone Neem And Tulsi Face Pack"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be91.jpg","price":"210","title":"Beeone Mint Facial Gel Be the first to review this product"}];
+{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o41_1.jpg","price":"431","title":"O3+ Milk Scrub Dry Skin Dermal Zone","qty":"1"},
+{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/8/288.jpg","price":"260","title":"Himalaya Herbals Oil-Free Radiance Gel Cream","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/7/s7.jpg","price":"640","title":"Shahnaz Husain Shalocks Plus Ayurvedic Hair Oil","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/1/s1_1.jpg","price":"1734","title":"Shahnaz Husain Gold 2-In-1 Anti Ageing Gel","qty":"1"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/a/la9.jpg","price":"400","title":"L'Oreal Paris White Perfect Scrub","qty":"1"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b28.jpg","price":"199","title":"Biotique Bio Sea Weed Revitalizing Anti Fatigue Eye Gel","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b25.jpg","price":"599","title":"Bioderma Atoderm Intensive Gel Moussant","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/1/c1.jpg","price":"1070","title":"Cetaphil Sun SPF 30 Light Gel","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/3/b3.jpg","price":"338","title":"Biotique Advanced Organics Tea Tree Targeted Skin Clearing Gel","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/j/6/j6.jpg","price":"170","title":"Joy Hydra Refresh Ultra Light Gel Moisturiser","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be106.jpg","price":"394","title":"Beeone Papaya Scrub","qty":"1"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be102_1.jpg","price":"210","title":"Beeone Papaya Facial Gel","qty":"1"},{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be100.jpg","price":"248","title":"Beeone Oxygen Facial Gel","qty":"1"},{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be97.jpg","price":"210","title":"Beeone Orange Facial Gel","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be95.jpg","price":"394","title":"Beeone Neem Scrub","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be93.jpg","price":"230","title":"Beeone Neem And Tulsi Face Pack","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be91.jpg","price":"210","title":"Beeone Mint Facial Gel Be the first to review this product","qty":"1"}];
 
 
 
@@ -489,6 +490,64 @@ for(let i=0;i<cart_product.length;i++)
   }
 
   Cartelementshow()
+
+  
+  
+  let flag = true;
+  let LetMagicBegins = ()=>{
+    let babba = document.getElementById("popupShopBy");
+    let BtN = document.querySelector("#plusSignforPop");
+    if(flag==true){
+      babba.style.display = "block" ;
+      BtN.textContent = "-";
+      flag=false;
+    }
+    else{
+      babba.style.display = "none" ;
+      BtN.textContent = "+";
+      flag=true
+    }
+    
+  }
+  //
+  let flag2 = true;
+  let LetMagicBegins2 = ()=>{
+    let babba2 = document.getElementById("popupShopBy2");
+    let BtN2 = document.querySelector("#plusSignforPop2");
+    if(flag2==true){
+      babba2.style.display = "block" ;
+      BtN2.textContent = "-";
+      flag2=false;
+    }
+    else{
+      babba2.style.display = "none" ;
+      BtN2.textContent = "+";
+      flag2=true
+    }
+    
+  }
+  //
+  let flag3 = true;
+  let LetMagicBegins3 = ()=>{
+    let babba3 = document.getElementById("popupShopBy3");
+    let BtN3 = document.querySelector("#plusSignforPop3");
+    if(flag3==true){
+      babba3.style.display = "block" ;
+      BtN3.textContent = "-";
+      flag3=false;
+    }
+    else{
+      babba3.style.display = "none" ;
+      BtN3.textContent = "+";
+      flag3=true
+    }
+    
+  }
+  // LetMagicBegins();
+  document.querySelector("#plusSignforPop").addEventListener("click",LetMagicBegins);
+  document.querySelector("#plusSignforPop2").addEventListener("click",LetMagicBegins2);
+  document.querySelector("#plusSignforPop3").addEventListener("click",LetMagicBegins3);
+
 
 
 
