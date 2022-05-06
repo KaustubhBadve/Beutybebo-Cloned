@@ -5,17 +5,17 @@ document.getElementById("footer").innerHTML=footer();
 
 
 document.getElementById("profilesymbol").addEventListener("click",showlogindiv)
-var flag=false
+var flag22=false
 function showlogindiv(){
-  if(flag==false)
+  if(flag22==false)
   {
     document.getElementById("profile").style.display="block"
-    flag=true
+    flag22=true
   }
-  else if(flag=true)
+  else if(flag22=true)
   {
     document.getElementById("profile").style.display="none"
-    flag=false
+    flag22=false
   }
   
 }

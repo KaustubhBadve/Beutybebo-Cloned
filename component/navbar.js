@@ -371,8 +371,8 @@ function header(){
 
 
     <div id="profile">
-    <div>Login</div>
-    <div>Register</div>
+    <div><a href="login.html">Login</a></div>
+    <div><a href="signup.html">Register</a></div>
 </div>
 
 <div id="searchresultdiv">
