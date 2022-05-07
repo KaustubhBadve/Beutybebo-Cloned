@@ -244,6 +244,147 @@ function myFunctionn() {
 
 
 
+document.getElementById("witharrow1").addEventListener("mouseover",mouseover7)
+
+function mouseover7(){
+console.log("Hii")
+document.querySelector("#SideHA").style.display="block"
+}
+
+document.getElementById("witharrow1").addEventListener("mouseout",mouseout7)
+
+function mouseout7(){
+
+document.querySelector("#SideHA").style.display="none"
+}
+
+
+
+
+document.getElementById("witharrow2").addEventListener("mouseover",mouseover8)
+
+function mouseover8(){
+
+document.getElementById("SideHB").style.display="block"
+}
+
+document.getElementById("witharrow2").addEventListener("mouseout",mouseout8)
+
+function mouseout8(){
+
+document.getElementById("SideHB").style.display="none"
+}
+
+
+
+document.getElementById("witharrow3").addEventListener("mouseover",mouseover9)
+
+function mouseover9(){
+
+document.getElementById("SideHC").style.display="block"
+}
+
+document.getElementById("witharrow3").addEventListener("mouseout",mouseout9)
+
+function mouseout9(){
+
+document.getElementById("SideHC").style.display="none"
+}
+
+
+
+
+document.getElementById("witharrow4").addEventListener("mouseover",mouseover10)
+
+function mouseover10(){
+
+document.getElementById("SideHD").style.display="block"
+}
+
+document.getElementById("witharrow4").addEventListener("mouseout",mouseout10)
+
+function mouseout10(){
+
+document.getElementById("SideHD").style.display="none"
+}
+
+
+document.getElementById("witharrow5").addEventListener("mouseover",mouseover11)
+
+function mouseover11(){
+
+document.getElementById("SideHE").style.display="block"
+}
+
+document.getElementById("witharrow5").addEventListener("mouseout",mouseout11)
+
+function mouseout11(){
+
+document.getElementById("SideHE").style.display="none"
+}
+
+
+
+
+
+  document.querySelector("#divbelownavbar").addEventListener("click",removesearch)
+
+  function removesearch(){
+    document.getElementById("searchresultdiv").style.display="none"
+    document.getElementById("inputsearch").value=""
+    document.getElementById("profile").style.display="none"
+  }
+
+
+
+
+
+  // For sliding images
+
+let slideimg=["https://www.beautybebo.com/pub/media/mega-menu/slider-2.jpg","https://www.beautybebo.com/pub/media/mega-menu/slider-1.jpg","https://www.beautybebo.com/pub/media/mega-menu/slider-3.jpg"]
+
+function slidingimage()
+{
+    let i=0
+
+    let slidingshow=document.getElementById("slidingshow")
+    let image=document.createElement("img")
+    setInterval(function(){
+        if(slideimg.length==i)
+        {
+            i=0
+        }
+        image.src=slideimg[i]
+        slidingshow.append(image)
+        i++
+    },2000)
+}
+
+slidingimage()
+
+// Read more function
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+
+  document.getElementById("myBtn").addEventListener("click",myFunction)
+
+
+
+
 
 
 
@@ -348,49 +489,7 @@ let price=localStorage.getItem("Totalprice") || 0
 
 
 
-// function addcart()
-// {
- 
-// var p=0;
-// for(let i=0;i<cart_product.length;i++)
-// {
-// if(cart_product[i].title===e.title)
-// {
-//   let K=cart_product[i].qty;
-//   K=Number(K)+1;
-//   cart_product[i].qty=K;
-//   var pric=cart_product[i].price;
-//   ++p;
-// }
-// }   
-// if(p==0)
-//  {cart_product.push(e);
-//   price=parseInt(price)+parseInt(e.price)
-//   document.getElementById("cartaddconfirmation").style.display="block"
-//   document.getElementById("main-r").style.marginTop="-290px"
-//   document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
- 
- 
-//   setTimeout(function(){
 
-//     document.getElementById("cartaddconfirmation").style.display="none"
-//     document.getElementById("main-r").style.marginTop="00px"
-//     window.location.reload()
-
-//   },5000)
-
-//   localStorage.setItem("Totalprice",price)
-  
-//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
-// }
-// else if(p!=0){
-//   price=parseInt(price)+parseInt(pric);
-//   localStorage.setItem("Totalprice",price);
-//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
-//   Cartelementshow();
-//   window.location.reload();
-// }
-// }
 
 Cartelementshow()
 
@@ -419,48 +518,7 @@ Cartelementshow()
 
 
 
-// For sliding images
 
-let slideimg=["https://www.beautybebo.com/pub/media/mega-menu/slider-2.jpg","https://www.beautybebo.com/pub/media/mega-menu/slider-1.jpg","https://www.beautybebo.com/pub/media/mega-menu/slider-3.jpg"]
-
-function slidingimage()
-{
-    let i=0
-
-    let slidingshow=document.getElementById("slidingshow")
-    let image=document.createElement("img")
-    setInterval(function(){
-        if(slideimg.length==i)
-        {
-            i=0
-        }
-        image.src=slideimg[i]
-        slidingshow.append(image)
-        i++
-    },2000)
-}
-
-slidingimage()
-
-// Read more function
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
-
-  document.getElementById("myBtn").addEventListener("click",myFunction)
 
 
 
@@ -863,93 +921,3 @@ Cartelementshow()
 
 
 
-document.getElementById("witharrow1").addEventListener("mouseover",mouseover7)
-
-function mouseover7(){
-console.log("Hii")
-document.querySelector("#SideHA").style.display="block"
-}
-
-document.getElementById("witharrow1").addEventListener("mouseout",mouseout7)
-
-function mouseout7(){
-
-document.querySelector("#SideHA").style.display="none"
-}
-
-
-
-
-document.getElementById("witharrow2").addEventListener("mouseover",mouseover8)
-
-function mouseover8(){
-
-document.getElementById("SideHB").style.display="block"
-}
-
-document.getElementById("witharrow2").addEventListener("mouseout",mouseout8)
-
-function mouseout8(){
-
-document.getElementById("SideHB").style.display="none"
-}
-
-
-
-document.getElementById("witharrow3").addEventListener("mouseover",mouseover9)
-
-function mouseover9(){
-
-document.getElementById("SideHC").style.display="block"
-}
-
-document.getElementById("witharrow3").addEventListener("mouseout",mouseout9)
-
-function mouseout9(){
-
-document.getElementById("SideHC").style.display="none"
-}
-
-
-
-
-document.getElementById("witharrow4").addEventListener("mouseover",mouseover10)
-
-function mouseover10(){
-
-document.getElementById("SideHD").style.display="block"
-}
-
-document.getElementById("witharrow4").addEventListener("mouseout",mouseout10)
-
-function mouseout10(){
-
-document.getElementById("SideHD").style.display="none"
-}
-
-
-document.getElementById("witharrow5").addEventListener("mouseover",mouseover11)
-
-function mouseover11(){
-
-document.getElementById("SideHE").style.display="block"
-}
-
-document.getElementById("witharrow5").addEventListener("mouseout",mouseout11)
-
-function mouseout11(){
-
-document.getElementById("SideHE").style.display="none"
-}
-
-
-
-
-
-  document.querySelector("#divbelownavbar").addEventListener("click",removesearch)
-
-  function removesearch(){
-    document.getElementById("searchresultdiv").style.display="none"
-    document.getElementById("inputsearch").value=""
-    document.getElementById("profile").style.display="none"
-  }
