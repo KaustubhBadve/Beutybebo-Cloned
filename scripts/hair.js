@@ -231,136 +231,6 @@ function myFunctionn() {
 
 
 
-let totalcart=localStorage.getItem("Totalprice")
-
-
-document.getElementById("cartvalue").innerHTML= totalcart || 0 
-
-document.getElementById("totalpriceofallproduct").innerHTML= ("₹ "+ totalcart+".00") || 0 
-
-
-
-let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
-
-
-function Cartelementshow(){
-
-document.getElementById("product_lists").innerHTML=null;
-
-productlist_cart.forEach(function(elem){
-
-let mainnnn=document.createElement("div")
-mainnnn.setAttribute("id","mainnnn")
-
-let imgdivCart=document.createElement("div")
-imgdivCart.setAttribute("id","imgdivcart")
-
-let imgcart=document.createElement("img")
-imgcart.src=elem.img
-
-imgdivCart.append(imgcart)
-
-let besideimgmain=document.createElement("div")
-besideimgmain.setAttribute("id","besideimgmain")
-
-let cartprodtitle=document.createElement("div")
-cartprodtitle.innerText=elem.title
-cartprodtitle.setAttribute("id","cartprodtitle")
-
-let cartprodprice=document.createElement("div")
-cartprodprice.innerText="₹ "+elem.price+".00"
-cartprodprice.setAttribute("id","cartprdprice")
-
-let qtydiv=document.createElement("div")
-qtydiv.setAttribute("id","qtydiv")
-
-let qtycart=document.createElement("div")
-qtycart.innerText="QTY : "
-qtycart.setAttribute("id","qtycart")
-
-let qtybox=document.createElement("div")
-qtybox.innerText=elem.qty;
-qtybox.setAttribute("id","qtybox")
-
-qtydiv.append(qtycart,qtybox)
-
-besideimgmain.append(cartprodtitle,cartprodprice,qtydiv)
-
-mainnnn.append(imgdivCart,besideimgmain)
-
-document.getElementById("product_lists").append(mainnnn)
-
-})
-}
-
-document.getElementById("cartnavbar").addEventListener("click",toshowcartproduct)
-
-var cartelemflag=false
-
-function toshowcartproduct(){
-  if(cartelemflag==false){
-    document.getElementById("cartproductlist").style.display="block"
-    cartelemflag=true
-  }
- else if(cartelemflag==true)
- {
-  document.getElementById("cartproductlist").style.display="none"
-  cartelemflag=false
- }
-}
-
-
-
-var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
-let price=localStorage.getItem("Totalprice") || 0
-
-
-
-function addcart(e)
-{
- 
-var p=0;
-for(let i=0;i<cart_product.length;i++)
-{
-if(cart_product[i].title===e.title)
-{
-  let K=cart_product[i].qty;
-  K=Number(K)+1;
-  cart_product[i].qty=K;
-  var pric=cart_product[i].price;
-  ++p;
-}
-}   
-if(p==0)
- {cart_product.push(e);
-  price=parseInt(price)+parseInt(e.price)
-  document.getElementById("cartaddconfirmation").style.display="block"
-  document.getElementById("main-r").style.marginTop="-290px"
-  document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
- 
- 
-  setTimeout(function(){
-
-    document.getElementById("cartaddconfirmation").style.display="none"
-    document.getElementById("main-r").style.marginTop="00px"
-    window.location.reload()
-
-  },5000)
-
-  localStorage.setItem("Totalprice",price)
-  
-  localStorage.setItem("cart_products",JSON.stringify(cart_product));
-}
-else if(p!=0){
-  price=parseInt(price)+parseInt(pric);
-  localStorage.setItem("Totalprice",price);
-  localStorage.setItem("cart_products",JSON.stringify(cart_product));
-  Cartelementshow();
-  window.location.reload();
-}
-}
-
-Cartelementshow()
 
 
 
@@ -381,32 +251,16 @@ Cartelementshow()
 
 
 
-
-
-
-
-
-let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/8/s8.jpg","price":"2468","title":"Calvin Klein Eternity For Men Eau De Parfum","qty":"1"}
-,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo21.jpg","price":"255","title":"Fogg Bleu Series Island Fragrance Body Spray","qty":"1"},
-{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg","price":"230","title":"Fogg Force Fragrance Body Spray","qty":"1"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo19.jpg","price":"230","title":"Fogg Punch Fragrance Body Spray","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo18.jpg","price":"255","title":"Fogg Bleu Series Mountain Fragrance Body Spray Be the first to review this product","qty":"1"},
-{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo17.jpg","price":"230","title":"Fogg Rush Fragrance Body Spray","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo16.jpg","price":"275","title":"Fogg Bleu Skies Fragrance Body Spray","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo15.jpg","price":"539","title":"Fogg Scent Intensio Men Fragrance Body Spray","qty":"1"},
-{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo13.jpg","price":"275","title":"Fogg Master Cedar Body Spray","qty":"1"},
-{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo12.jpg","price":"250","title":"Fogg Black Fresh Aromatic Fragrance Body Spray Be the first to review this product","qty":"1"},
-{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo10.jpg","price":"1275","title":"Fogg Master Agar Body Spray","qty":"1"},
-{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo9.jpg","price":"2150","title":"Fogg Black Fresh Fougere Body Spray Deodorant For Men","qty":"1"},
-{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo8.jpg","price":"539","title":"Fogg Scent Xpressio Men Fragrance Body Spray Be the first to review this product","qty":"1"},
-{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo7.jpg","price":"250","title":"Fogg Dynamic Fragrance Body Spray","qty":"1"},
-{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo6.jpg","price":"539","title":"Fogg Scent Xtremo Men Fragrance Body Spray","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo5.jpg","price":"234","title":"Fogg Black Fresh Spicy Body Spray Deodorant For Men","qty":"1"},
-{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo3.jpg","price":"275","title":"Fogg Master Oak Body Spray","qty":"1"},
-{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo1.jpg","price":"275","title":"Fogg Master Pine Body Spray","qty":"1"},
-{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/r/rr.jpg","price":"539","title":"Fogg Scent Beautiful Secret Women Fragrance Body Spray","qty":"1"},
-{"bracket":3,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e55.jpg","price":"459","title":"Engage Yin Eau De Parfum For Men","qty":"1"},
-{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e54.jpg","price":"1195","title":"Engage Sport Cool Deodorant For Women, Citrus & Spicy, Skin Friendly","qty":"1"}
-,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e52.jpg","price":"195","title":"Engage Sport Fresh Deodorant For Women","qty":"1"}];
+let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/8/18_12_3.jpg","price":"285","title":"Vaadi Herbals Aloe Vera Face Scrub","qty":"1"}
+,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/7/17_14_4.jpg","price":"320","title":"Vaadi Herbals 24 Carat Gold Massage Gel With 24 Carat Gold Dust & Grape","qty":"1"}
+,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o45.jpg","price":"450","title":"O3+ Volcano Scrub","qty":"1"},
+{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/o/4/o41_1.jpg","price":"431","title":"O3+ Milk Scrub Dry Skin Dermal Zone","qty":"1"},
+{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/8/288.jpg","price":"260","title":"Himalaya Herbals Oil-Free Radiance Gel Cream","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/7/s7.jpg","price":"640","title":"Shahnaz Husain Shalocks Plus Ayurvedic Hair Oil","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/1/s1_1.jpg","price":"1734","title":"Shahnaz Husain Gold 2-In-1 Anti Ageing Gel","qty":"1"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/l/a/la9.jpg","price":"400","title":"L'Oreal Paris White Perfect Scrub","qty":"1"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b28.jpg","price":"199","title":"Biotique Bio Sea Weed Revitalizing Anti Fatigue Eye Gel","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/2/b25.jpg","price":"599","title":"Bioderma Atoderm Intensive Gel Moussant","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/1/c1.jpg","price":"1070","title":"Cetaphil Sun SPF 30 Light Gel","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/3/b3.jpg","price":"338","title":"Biotique Advanced Organics Tea Tree Targeted Skin Clearing Gel","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/j/6/j6.jpg","price":"170","title":"Joy Hydra Refresh Ultra Light Gel Moisturiser","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be106.jpg","price":"394","title":"Beeone Papaya Scrub","qty":"1"},{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be102_1.jpg","price":"210","title":"Beeone Papaya Facial Gel","qty":"1"},{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be100.jpg","price":"248","title":"Beeone Oxygen Facial Gel","qty":"1"},{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be97.jpg","price":"210","title":"Beeone Orange Facial Gel","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be95.jpg","price":"394","title":"Beeone Neem Scrub","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be93.jpg","price":"230","title":"Beeone Neem And Tulsi Face Pack","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/e/be91.jpg","price":"210","title":"Beeone Mint Facial Gel Be the first to review this product","qty":"1"}];
 
 
 
 function Verticalappend(ayur_arr){
+
   document.getElementById("prodlist-r").innerHTML=null;
     console.log(ayur_arr);
     ayur_arr.map(function(e,index){
@@ -450,7 +304,7 @@ function Verticalappend(ayur_arr){
     pricediv.setAttribute("id","pricedivv")
   
     let cutoffprice=document.createElement("div")
-    cutoffprice.innerText="₹ "+(Number(e.price)*1.3).toFixed(2)
+       cutoffprice.innerText="₹ "+(Number(e.price)*1.3).toFixed(2)
        cutoffprice.setAttribute("id","cutoff")
   
     let price=document.createElement("div")
@@ -497,13 +351,151 @@ function Verticalappend(ayur_arr){
 
 
 
+
+  let totalcart=localStorage.getItem("Totalprice")
+
+
+  document.getElementById("cartvalue").innerHTML= totalcart || 0 
+  
+  document.getElementById("totalpriceofallproduct").innerHTML= ("₹ "+ totalcart+".00") || 0 
   
   
- 
+  
+  let productlist_cart=JSON.parse(localStorage.getItem("cart_products"))
+  
+  
+  function Cartelementshow(){
+  
+  document.getElementById("product_lists").innerHTML=null;
+  
+  productlist_cart.forEach(function(elem){
+  
+  let mainnnn=document.createElement("div")
+  mainnnn.setAttribute("id","mainnnn")
+  
+  let imgdivCart=document.createElement("div")
+  imgdivCart.setAttribute("id","imgdivcart")
+  
+  let imgcart=document.createElement("img")
+  imgcart.src=elem.img
+  
+  imgdivCart.append(imgcart)
+  
+  let besideimgmain=document.createElement("div")
+  besideimgmain.setAttribute("id","besideimgmain")
+  
+  let cartprodtitle=document.createElement("div")
+  cartprodtitle.innerText=elem.title
+  cartprodtitle.setAttribute("id","cartprodtitle")
+  
+  let cartprodprice=document.createElement("div")
+  cartprodprice.innerText="₹ "+elem.price+".00"
+  cartprodprice.setAttribute("id","cartprdprice")
+  
+  let qtydiv=document.createElement("div")
+  qtydiv.setAttribute("id","qtydiv")
+  
+  let qtycart=document.createElement("div")
+  qtycart.innerText="QTY : "
+  qtycart.setAttribute("id","qtycart")
+  
+  let qtybox=document.createElement("div")
+  qtybox.innerText=elem.qty;
+  qtybox.setAttribute("id","qtybox")
+  
+  qtydiv.append(qtycart,qtybox)
+  
+  besideimgmain.append(cartprodtitle,cartprodprice,qtydiv)
+  
+  mainnnn.append(imgdivCart,besideimgmain)
+  
+  document.getElementById("product_lists").append(mainnnn)
+  
+  })
+  }
+  
+  document.getElementById("cartnavbar").addEventListener("click",toshowcartproduct)
+  
+  var cartelemflag=false
+  
+  function toshowcartproduct(){
+    if(cartelemflag==false){
+      document.getElementById("cartproductlist").style.display="block"
+      cartelemflag=true
+    }
+   else if(cartelemflag==true)
+   {
+    document.getElementById("cartproductlist").style.display="none"
+    cartelemflag=false
+   }
+  }
+  
+  
+  
+  var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
+  let price=localStorage.getItem("Totalprice") || 0
+  
+  
+  
+  function addcart(e)
+  {
+   
+  var p=0;
+  for(let i=0;i<cart_product.length;i++)
+  {
+  if(cart_product[i].title===e.title)
+  {
+    let K=cart_product[i].qty;
+    K=Number(K)+1;
+    cart_product[i].qty=K;
+    var pric=cart_product[i].price;
+    ++p;
+  }
+  }   
+  if(p==0)
+   {cart_product.push(e);
+    price=parseInt(price)+parseInt(e.price);
+    document.getElementById("cartaddconfirmation").style.display="block"
+    document.getElementById("main-r").style.marginTop="-290px"
+    document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
+   
+   
+    setTimeout(function(){
+  
+      document.getElementById("cartaddconfirmation").style.display="none"
+      document.getElementById("main-r").style.marginTop="00px"
+      window.location.reload()
+  
+    },5000)
+  
+    localStorage.setItem("Totalprice",price)
+    
+    localStorage.setItem("cart_products",JSON.stringify(cart_product));
+  }
+  else if(p!=0){
+    price=parseInt(price)+parseInt(pric);
+    localStorage.setItem("Totalprice",price);
+    localStorage.setItem("cart_products",JSON.stringify(cart_product));
+    Cartelementshow();
+    window.location.reload();
+  }
+  }
+  
+  Cartelementshow()
 
 
 
 
+
+
+
+
+
+
+
+
+  
+  
   let flaggg = true;
   let LetMagicBegins = ()=>{
     let babba = document.getElementById("popupShopBy");
@@ -567,24 +559,16 @@ function Verticalappend(ayur_arr){
 
 
 
-  document.getElementById("CombiNationChecked1").addEventListener("click",as1);
-
-
-
+// less than thousand
+document.getElementById("CombiNationChecked1").addEventListener("click",as1);
 var b1000=[];
 var w=0;
-
-
-
-
 function as1()
-{
-  b1000=[];
+{b1000=[];
   if(w%2==0)
   {
     let z1=document.getElementById("CombiNationChecked1").value;
-    console.log(z1)
-if(z1==="on")
+if(z1==='on')
 {
     for(let i=0;i<ayur_arr.length;++i)
     {
@@ -597,7 +581,6 @@ if(z1==="on")
     }
     document.getElementById("prodlist-r").innerHTML=null;
     Verticalappend(b1000);
-    console.log(b1000)
 }
   }
 else{
@@ -633,8 +616,6 @@ if(z1==='on')
   }
 ++y;
 }
-
-
 
 // sort by name
 document.getElementById("sort-r").addEventListener("click",as3);
@@ -685,4 +666,3 @@ if(z1==3)
 
 
 }
- 
