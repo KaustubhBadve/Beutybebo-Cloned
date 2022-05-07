@@ -957,3 +957,40 @@ margin-right: 10px;
 
 
 
+
+#cartaddconfirmation{
+    display: none;
+    position: sticky;
+    top: 20%;
+    left: 43%;
+    /* border: 1px solid red; */
+    background-color: rgb(249, 252, 246);
+    width: 370px;
+    height: 260px;padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#textappearhere{
+    background-color: rgb(204, 243, 145);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    letter-spacing: 0.5px;
+}
+#cartdivbtn{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cartdivbtn>button{
+    background-color: #dd0285;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+

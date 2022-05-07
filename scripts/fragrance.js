@@ -386,11 +386,28 @@ Cartelementshow()
 
 
 
-let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/8/s8.jpg","price":"3468","title":"Calvin Klein Eternity For Men Eau De Parfum"},{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo21.jpg","price":"255","title":"Fogg Bleu Series Island Fragrance Body Spray"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg","price":"230","title":"Fogg Force Fragrance Body Spray"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo19.jpg","price":"230","title":"Fogg Punch Fragrance Body Spray"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo18.jpg","price":"255","title":"Fogg Bleu Series Mountain Fragrance Body Spray Be the first to review this product"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo17.jpg","price":"230","title":"Fogg Rush Fragrance Body Spray"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo16.jpg","price":"275","title":"Fogg Bleu Skies Fragrance Body Spray"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo15.jpg","price":"539","title":"Fogg Scent Intensio Men Fragrance Body Spray"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo13.jpg","price":"275","title":"Fogg Master Cedar Body Spray"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo12.jpg","price":"250","title":"Fogg Black Fresh Aromatic Fragrance Body Spray Be the first to review this product"},{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo10.jpg","price":"275","title":"Fogg Master Agar Body Spray"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo9.jpg","price":"250","title":"Fogg Black Fresh Fougere Body Spray Deodorant For Men"},{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo8.jpg","price":"539","title":"Fogg Scent Xpressio Men Fragrance Body Spray Be the first to review this product"},{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo7.jpg","price":"250","title":"Fogg Dynamic Fragrance Body Spray"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo6.jpg","price":"539","title":"Fogg Scent Xtremo Men Fragrance Body Spray"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo5.jpg","price":"234","title":"Fogg Black Fresh Spicy Body Spray Deodorant For Men"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo3.jpg","price":"275","title":"Fogg Master Oak Body Spray"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo1.jpg","price":"275","title":"Fogg Master Pine Body Spray"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/r/rr.jpg","price":"539","title":"Fogg Scent Beautiful Secret Women Fragrance Body Spray"},{"bracket":3,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e55.jpg","price":"459","title":"Engage Yin Eau De Parfum For Men"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e54.jpg","price":"195","title":"Engage Sport Cool Deodorant For Women, Citrus & Spicy, Skin Friendly"},{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e52.jpg","price":"195","title":"Engage Sport Fresh Deodorant For Women"}];
+let ayur_arr=[{"bracket":7,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/8/s8.jpg","price":"2468","title":"Calvin Klein Eternity For Men Eau De Parfum","qty":"1"}
+,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo21.jpg","price":"255","title":"Fogg Bleu Series Island Fragrance Body Spray","qty":"1"},
+{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg","price":"230","title":"Fogg Force Fragrance Body Spray","qty":"1"},{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo19.jpg","price":"230","title":"Fogg Punch Fragrance Body Spray","qty":"1"},{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo18.jpg","price":"255","title":"Fogg Bleu Series Mountain Fragrance Body Spray Be the first to review this product","qty":"1"},
+{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo17.jpg","price":"230","title":"Fogg Rush Fragrance Body Spray","qty":"1"},{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo16.jpg","price":"275","title":"Fogg Bleu Skies Fragrance Body Spray","qty":"1"},{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo15.jpg","price":"539","title":"Fogg Scent Intensio Men Fragrance Body Spray","qty":"1"},
+{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo13.jpg","price":"275","title":"Fogg Master Cedar Body Spray","qty":"1"},
+{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo12.jpg","price":"250","title":"Fogg Black Fresh Aromatic Fragrance Body Spray Be the first to review this product","qty":"1"},
+{"bracket":6,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo10.jpg","price":"1275","title":"Fogg Master Agar Body Spray","qty":"1"},
+{"bracket":4,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo9.jpg","price":"2150","title":"Fogg Black Fresh Fougere Body Spray Deodorant For Men","qty":"1"},
+{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo8.jpg","price":"539","title":"Fogg Scent Xpressio Men Fragrance Body Spray Be the first to review this product","qty":"1"},
+{"bracket":1,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo7.jpg","price":"250","title":"Fogg Dynamic Fragrance Body Spray","qty":"1"},
+{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo6.jpg","price":"539","title":"Fogg Scent Xtremo Men Fragrance Body Spray","qty":"1"},{"bracket":5,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo5.jpg","price":"234","title":"Fogg Black Fresh Spicy Body Spray Deodorant For Men","qty":"1"},
+{"bracket":8,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo3.jpg","price":"275","title":"Fogg Master Oak Body Spray","qty":"1"},
+{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo1.jpg","price":"275","title":"Fogg Master Pine Body Spray","qty":"1"},
+{"bracket":0,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/r/rr.jpg","price":"539","title":"Fogg Scent Beautiful Secret Women Fragrance Body Spray","qty":"1"},
+{"bracket":3,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e55.jpg","price":"459","title":"Engage Yin Eau De Parfum For Men","qty":"1"},
+{"bracket":2,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e54.jpg","price":"1195","title":"Engage Sport Cool Deodorant For Women, Citrus & Spicy, Skin Friendly","qty":"1"}
+,{"bracket":9,"img":"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e52.jpg","price":"195","title":"Engage Sport Fresh Deodorant For Women","qty":"1"}];
 
 
 
-function Verticalappend(){
+function Verticalappend(ayur_arr){
+  document.getElementById("prodlist-r").innerHTML=null;
     console.log(ayur_arr);
     ayur_arr.map(function(e,index){
      
@@ -433,7 +450,7 @@ function Verticalappend(){
     pricediv.setAttribute("id","pricedivv")
   
     let cutoffprice=document.createElement("div")
-       cutoffprice.innerText="₹ 500"
+    cutoffprice.innerText="₹ "+(Number(e.price)*1.3).toFixed(2)
        cutoffprice.setAttribute("id","cutoff")
   
     let price=document.createElement("div")
@@ -473,7 +490,7 @@ function Verticalappend(){
     )
   }
   
-  Verticalappend();
+  Verticalappend(ayur_arr);
   
 
 
@@ -482,66 +499,140 @@ function Verticalappend(){
 
   
   
-  // let flaggg = true;
-  // let LetMagicBegins = ()=>{
-  //   let babba = document.getElementById("popupShopBy");
-  //   let BtN = document.querySelector("#plusSignforPop");
-  //   if(flaggg==true){
-  //     babba.style.display = "block" ;
-  //     BtN.textContent = "-";
-  //     flaggg=false;
-  //   }
-  //   else{
-  //     babba.style.display = "none" ;
-  //     BtN.textContent = "+";
-  //     flaggg=true
-  //   }
+ 
+
+
+
+
+  let flaggg = true;
+  let LetMagicBegins = ()=>{
+    let babba = document.getElementById("popupShopBy");
+    let BtN = document.querySelector("#plusSignforPop");
+    if(flaggg==true){
+      babba.style.display = "block" ;
+      BtN.textContent = "-";
+      flaggg=false;
+    }
+    else if(flag==false){
+      babba.style.display = "none" ;
+      BtN.textContent = "+";
+      flaggg=true
+    }
     
-  // }
-  // //
-  // let flag2 = true;
-  // let LetMagicBegins2 = ()=>{
-  //   let babba2 = document.getElementById("popupShopBy2");
-  //   let BtN2 = document.querySelector("#plusSignforPop2");
-  //   if(flag2==true){
-  //     babba2.style.display = "block" ;
-  //     BtN2.textContent = "-";
-  //     flag2=false;
-  //   }
-  //   else{
-  //     babba2.style.display = "none" ;
-  //     BtN2.textContent = "+";
-  //     flag2=true
-  //   }
+  }
+  //
+  let flag2 = true;
+  let LetMagicBegins2 = ()=>{
+    let babba2 = document.getElementById("popupShopBy2");
+    let BtN2 = document.querySelector("#plusSignforPop2");
+    if(flag2==true){
+      babba2.style.display = "block" ;
+      BtN2.textContent = "-";
+      flag2=false;
+    }
+    else{
+      babba2.style.display = "none" ;
+      BtN2.textContent = "+";
+      flag2=true
+    }
     
-  // }
-  // //
-  // let flag3 = true;
-  // let LetMagicBegins3 = ()=>{
-  //   let babba3 = document.getElementById("popupShopBy3");
-  //   let BtN3 = document.querySelector("#plusSignforPop3");
-  //   if(flag3==true){
-  //     babba3.style.display = "block" ;
-  //     BtN3.textContent = "-";
-  //     flag3=false;
-  //   }
-  //   else{
-  //     babba3.style.display = "none" ;
-  //     BtN3.textContent = "+";
-  //     flag3=true
-  //   }
+  }
+  //
+  let flag3 = true;
+  let LetMagicBegins3 = ()=>{
+    let babba3 = document.getElementById("popupShopBy3");
+    let BtN3 = document.querySelector("#plusSignforPop3");
+    if(flag3==true){
+      babba3.style.display = "block" ;
+      BtN3.textContent = "-";
+      flag3=false;
+    }
+    else{
+      babba3.style.display = "none" ;
+      BtN3.textContent = "+";
+      flag3=true
+    }
     
-  // }
-  // // LetMagicBegins();
-  // document.querySelector("#plusSignforPop").addEventListener("click",LetMagicBegins);
-  // document.querySelector("#plusSignforPop2").addEventListener("click",LetMagicBegins2);
-  // document.querySelector("#plusSignforPop3").addEventListener("click",LetMagicBegins3);
+  }
+  // LetMagicBegins();
+  document.querySelector("#plusSignforPop").addEventListener("click",LetMagicBegins);
+  document.querySelector("#plusSignforPop2").addEventListener("click",LetMagicBegins2);
+  document.querySelector("#plusSignforPop3").addEventListener("click",LetMagicBegins3);
 
 
 
 
 
 
+
+
+
+  document.getElementById("CombiNationChecked1").addEventListener("click",as1);
+
+
+
+var b1000=[];
+var w=0;
+
+
+
+
+function as1()
+{
+  b1000=[];
+  if(w%2==0)
+  {
+    let z1=document.getElementById("CombiNationChecked1").value;
+    console.log(z1)
+if(z1==="on")
+{
+    for(let i=0;i<ayur_arr.length;++i)
+    {
+        
+        if(Number(ayur_arr[i].price)<1000)
+      {
+        b1000.push(ayur_arr[i])
+      }
+      
+    }
+    document.getElementById("prodlist-r").innerHTML=null;
+    Verticalappend(b1000);
+    console.log(b1000)
+}
+  }
+else{
+  Verticalappend(ayur_arr);
+}
+++w;
+}
+// greater than thousand
+document.getElementById("CombiNationChecked2").addEventListener("click",as2);
+var b1000=[];
+var y=0;
+function as2()
+{b1000=[];
+  if(y%2==0)
+  {
+    let z1=document.getElementById("CombiNationChecked2").value;
+if(z1==='on')
+{
+    for(let i=0;i<ayur_arr.length;++i)
+    {
+        
+        if(Number(ayur_arr[i].price)>=1000)
+      {
+        b1000.push(ayur_arr[i])
+      }
+      
+    }
+    Verticalappend(b1000);
+}
+  }
+  else{
+    Verticalappend(ayur_arr);
+  }
+++y;
+}
 
 
 

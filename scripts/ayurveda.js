@@ -310,7 +310,7 @@ function Verticalappend(ayur_arr){
     pricediv.setAttribute("id","pricedivv")
   
     let cutoffprice=document.createElement("div")
-       cutoffprice.innerText="₹ 500"
+       cutoffprice.innerText="₹ "+(Number(e.price)*1.3).toFixed(2)
        cutoffprice.setAttribute("id","cutoff")
   
     let price=document.createElement("div")
