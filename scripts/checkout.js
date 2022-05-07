@@ -7,7 +7,7 @@ let prod_total=JSON.parse(localStorage.getItem("cart_products"));
 let cart_total=localStorage.getItem("Totalprice");
 //console.log(Totalprice);
 document.getElementById("subtotal-r").innerText=Number(cart_total).toFixed(2);
-document.getElementById("total_gst").innerText=(Number(cart_total)+55).toFixed(2);
+document.getElementById("total_gst").innerText=Number(cart_total).toFixed(2);
 
 
 function create(s)

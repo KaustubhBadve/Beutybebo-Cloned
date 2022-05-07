@@ -7,6 +7,15 @@ document.getElementById("footer").innerHTML=footer()
 
 
 
+// 
+var u=localStorage.getItem("Totalprice");
+// console.log(u);
+if(u==null)
+{var in1=[];
+var in2=0;
+localStorage.setItem("cart_products",JSON.stringify(in1));
+localStorage.setItem("Totalprice",in2);
+}
 
 
 document.getElementById("profilesymbol").addEventListener("click",showlogindiv)
@@ -534,12 +543,13 @@ Cartelementshow()
   this.img=imgurl,
   this.title=title,
   this.bracket=bracketno,
-  this.price=price
+  this.price=price,
+  this.qty="1"
 }
 
 let productArr=[]
 
-let p1=new products("https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg","Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid + Vitamin E","20","299" )
+let p1=new products("https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/p/o/ponds_super_light_gel_oil_free_moisturiser_with_hyaluronic_acid_vitamin_e2.jpg","Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid + Vitamin E","20","299")
 
 let p2=new products("https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/c/l/cl-08_strawberry_love-min_2.png","Blue Heaven Candy Matte Lip Color","18","125")
 
