@@ -343,54 +343,54 @@ function toshowcartproduct(){
 
 
 
-var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
+// var cart_product=JSON.parse(localStorage.getItem("cart_products"))||[];
 let price=localStorage.getItem("Totalprice") || 0
 
 
 
-function addcart()
-{
+// function addcart()
+// {
  
-var p=0;
-for(let i=0;i<cart_product.length;i++)
-{
-if(cart_product[i].title===e.title)
-{
-  let K=cart_product[i].qty;
-  K=Number(K)+1;
-  cart_product[i].qty=K;
-  var pric=cart_product[i].price;
-  ++p;
-}
-}   
-if(p==0)
- {cart_product.push(e);
-  price=parseInt(price)+parseInt(e.price)
-  document.getElementById("cartaddconfirmation").style.display="block"
-  document.getElementById("main-r").style.marginTop="-290px"
-  document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
+// var p=0;
+// for(let i=0;i<cart_product.length;i++)
+// {
+// if(cart_product[i].title===e.title)
+// {
+//   let K=cart_product[i].qty;
+//   K=Number(K)+1;
+//   cart_product[i].qty=K;
+//   var pric=cart_product[i].price;
+//   ++p;
+// }
+// }   
+// if(p==0)
+//  {cart_product.push(e);
+//   price=parseInt(price)+parseInt(e.price)
+//   document.getElementById("cartaddconfirmation").style.display="block"
+//   document.getElementById("main-r").style.marginTop="-290px"
+//   document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
  
  
-  setTimeout(function(){
+//   setTimeout(function(){
 
-    document.getElementById("cartaddconfirmation").style.display="none"
-    document.getElementById("main-r").style.marginTop="00px"
-    window.location.reload()
+//     document.getElementById("cartaddconfirmation").style.display="none"
+//     document.getElementById("main-r").style.marginTop="00px"
+//     window.location.reload()
 
-  },5000)
+//   },5000)
 
-  localStorage.setItem("Totalprice",price)
+//   localStorage.setItem("Totalprice",price)
   
-  localStorage.setItem("cart_products",JSON.stringify(cart_product));
-}
-else if(p!=0){
-  price=parseInt(price)+parseInt(pric);
-  localStorage.setItem("Totalprice",price);
-  localStorage.setItem("cart_products",JSON.stringify(cart_product));
-  Cartelementshow();
-  window.location.reload();
-}
-}
+//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
+// }
+// else if(p!=0){
+//   price=parseInt(price)+parseInt(pric);
+//   localStorage.setItem("Totalprice",price);
+//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
+//   Cartelementshow();
+//   window.location.reload();
+// }
+// }
 
 Cartelementshow()
 
@@ -568,9 +568,9 @@ function append(a,cont){
      cutoffprice.innerText="₹ 500"
      cutoffprice.setAttribute("id","cutoff")
 
-  let price=document.createElement("div")
-  price.innerText="₹"+productArr[a].price+".00"
-  price.setAttribute("id","price")
+  let price1=document.createElement("div")
+  price1.innerText="₹"+productArr[a].price+".00"
+  price1.setAttribute("id","price")
 
   let off=document.createElement("div")
   off.innerText="30% off"
@@ -585,6 +585,59 @@ pricediv.append(cutoffprice,price,off)
   let addtocart=document.createElement("button")
        addtocart.innerText="Add To Cart"
        addtocart.setAttribute("id","addtocartbtn")
+
+
+       addtocart.addEventListener("click",function(){
+       
+        console.log("product",productArr[a])
+      let p=0;
+        for(let i=0;i<cart_product.length;i++)
+        {
+        if(cart_product[i].title===productArr[a].title)
+        {
+          let K=cart_product[i].qty;
+          K=Number(K)+1;
+          cart_product[i].qty=K;
+          var pric=cart_product[i].price;
+          console.log("price",pric)
+          ++p;
+        }
+        }   
+        if(p==0)
+         {cart_product.push(productArr[a]);
+                 price=parseInt(price)+parseInt(productArr[a].price);
+          document.getElementById("cartaddconfirmation").style.display="block"
+          // document.getElementById("main-r").style.marginTop="-290px"
+          document.getElementById("textappearhere").innerText= "You added in your Cart"+ productArr[a].title
+         
+         
+
+          setTimeout(function(){
+        
+            document.getElementById("cartaddconfirmation").style.display="none"
+            // document.getElementById("main-r").style.marginTop="00px"
+            window.location.reload()
+        
+          },16000)
+        
+          localStorage.setItem("Totalprice",price)
+          console.log("local",price)
+          
+          localStorage.setItem("cart_products",JSON.stringify(cart_product));
+        }
+        else if(p!=0){
+          price=parseInt(price)+parseInt(pric);
+          localStorage.setItem("Totalprice",price);
+          localStorage.setItem("cart_products",JSON.stringify(cart_product));
+          Cartelementshow();
+          window.location.reload();
+        }
+        
+      })
+
+
+
+
   let favourate=document.createElement("button")
   favourate.innerText="♥"
   favourate.setAttribute("id","favouratebtn")
@@ -669,15 +722,15 @@ function Verticalappend(a,cont){
   cutoffprice.innerText="₹ "+(Number(productArr[a].price)*1.3).toFixed(2)
      cutoffprice.setAttribute("id","cutoff")
 
-  let price=document.createElement("div")
-  price.innerText="₹"+productArr[a].price+".00"
-  price.setAttribute("id","price")
+  let price1=document.createElement("div")
+  price1.innerText="₹"+productArr[a].price+".00"
+  price1.setAttribute("id","price")
 
   let off=document.createElement("div")
   off.innerText="30% off"
   off.setAttribute("id","offprice")
 
-pricediv.append(cutoffprice,price,off)
+pricediv.append(cutoffprice,price1,off)
 
 
   let buttons=document.createElement("div")
@@ -718,8 +771,7 @@ pricediv.append(cutoffprice,price,off)
         }   
         if(p==0)
          {cart_product.push(productArr[a]);
-          console.log(cart_product)
-          price=parseInt(price)+parseInt(productArr[a].price)
+                 price=parseInt(price)+parseInt(productArr[a].price);
           document.getElementById("cartaddconfirmation").style.display="block"
           // document.getElementById("main-r").style.marginTop="-290px"
           document.getElementById("textappearhere").innerText= "You added in your Cart"+ productArr[a].title
@@ -775,52 +827,6 @@ Verticalappend(16,"q")
 
 
 
-
-
-
-// function addcart(productArr[a])
-// {
- 
-// var p=0;
-// for(let i=0;i<cart_product.length;i++)
-// {
-// if(cart_product[i].title===e.title)
-// {
-//   let K=cart_product[i].qty;
-//   K=Number(K)+1;
-//   cart_product[i].qty=K;
-//   var pric=cart_product[i].price;
-//   ++p;
-// }
-// }   
-// if(p==0)
-//  {cart_product.push(e);
-//   price=parseInt(price)+parseInt(e.price)
-//   document.getElementById("cartaddconfirmation").style.display="block"
-//   document.getElementById("main-r").style.marginTop="-290px"
-//   document.getElementById("textappearhere").innerText=` You added ${e.title} in your Cart`
- 
- 
-//   setTimeout(function(){
-
-//     document.getElementById("cartaddconfirmation").style.display="none"
-//     document.getElementById("main-r").style.marginTop="00px"
-//     window.location.reload()
-
-//   },5000)
-
-//   localStorage.setItem("Totalprice",price)
-  
-//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
-// }
-// else if(p!=0){
-//   price=parseInt(price)+parseInt(pric);
-//   localStorage.setItem("Totalprice",price);
-//   localStorage.setItem("cart_products",JSON.stringify(cart_product));
-//   Cartelementshow();
-//   window.location.reload();
-// }
-// }
 
 Cartelementshow()
 
