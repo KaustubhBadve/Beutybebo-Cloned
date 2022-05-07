@@ -61,10 +61,10 @@ function header(){
     
        
         <div id="navbar">
-        <div> <a href="makeup.html"><div id="navbartitle1">MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div></a></div>
-    <div> <a href="skin.html"> <div id="navbartitle2">SKIN <span><i class="fa-solid fa-angle-down"></i></span></div></a></div>
-    <div> <a href="hair.html"><div id="navbartitle3">HAIR <span><i class="fa-solid fa-angle-down"></i></span></div></a> </div>
-    <div> <a href="personalcare.html"><div id="navbartitle4">PERSONAL CARE <span><i class="fa-solid fa-angle-down"></i></span></div></a> </div>
+        <div> <a id="anchortag" href="makeup.html"><div id="navbartitle1">MAKEUP <span><i class="fa-solid fa-angle-down"></i></span></div></a></div>
+    <div> <a id="anchortag" href="skin.html"> <div id="navbartitle2">SKIN <span><i class="fa-solid fa-angle-down"></i></span></div></a></div>
+    <div> <a id="anchortag" href="hair.html"><div id="navbartitle3">HAIR <span><i class="fa-solid fa-angle-down"></i></span></div></a> </div>
+    <div> <a id="anchortag" href="personalcare.html"><div id="navbartitle4">PERSONAL CARE <span><i class="fa-solid fa-angle-down"></i></span></div></a> </div>
     <div><div id="navbartitle5"><a id="anchortag" href="mom_baby.html">MOM & BABY CARE</a> <span><i class="fa-solid fa-angle-down"></i></span></div></div>
     <div> <div id="navbartitle"><a id="anchortag" href="fragrance.html">FRAGRANCE</a>  <span><i class="fa-solid fa-angle-down"></i></span></div></div>
     <div> <div id="navbartitle6"><a id="anchortag" href="ayurveda.html">AYURVEDA </a><span><i class="fa-solid fa-angle-down"></i></span>   </div></div>

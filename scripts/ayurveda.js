@@ -628,7 +628,7 @@ document.getElementById("sort-r").addEventListener("click",as3);
 var b1000=[];
 // var ayurarr1=ayur_arr
 let r=0;
-for(i=0;i<ayur_arr.length;++i)
+for(let i=0;i<ayur_arr.length;++i)
 {}
 function as3()
 {if(r%2!=0)
