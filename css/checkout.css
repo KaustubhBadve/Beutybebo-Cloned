@@ -62,6 +62,9 @@ button{
   background-color: white;
   border: 1px solid #dbdbdb;
 }
+button:hover{
+  cursor: pointer;
+}
 #box8-r{
   display: flex;
   justify-content: space-between;
