@@ -33,10 +33,14 @@ justify-content: space-between;
     padding: 10px 15px 10px 15px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     }
 #a1234 button:hover{
 background-color: #dd0285;
 }   
+#a1234 button:nth-child(1){
+    background-color: #dd0285 !important;
+}
 #choose-r{
 display: flex;
 align-items: center;
@@ -766,3 +770,6 @@ color: gray;
 
 
 }
+/* #oneee{
+    background-color: #dd0285 !important;
+} */
