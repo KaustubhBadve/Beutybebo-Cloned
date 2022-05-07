@@ -612,18 +612,54 @@ if(z1==='on')
 }
 
 // sort by name
-// document.getElementById("sort-r").addEventListener("click",as3);
-// var b1000=[];
-// function as3()
-// {b1000=[];
-//     let z1=document.getElementById("sort-r").value;
-// if(z1===1)
-// {
-  // ayur_arr.sort(function(a,b){})
-//     document.getElementById("prodlist-r").innerHTML=null;
-//     Verticalappend(b1000);
+document.getElementById("sort-r").addEventListener("click",as3);
+var b1000=[];
+// var ayurarr1=ayur_arr
+let r=0;
+for(i=0;i<ayur_arr.length;++i)
+{}
+function as3()
+{if(r%2!=0)
+ {
+  // console.log(document.getElementById("sort-r").value)
+  b1000=[];
+    let z1=document.getElementById("sort-r").value;
+if(z1==3)
+{
+  ayur_arr.sort(function(a,b){
+    return a.price-b.price;
+  })
+ } 
+ else if(z1==4)
+ {
+   ayur_arr.sort(function(a,b){
+     return b.price-a.price;
+   })
+  } 
+  else if(z1==1)
+  {
+    ayur_arr.sort(function(a,b){
+      let fa = a.title.toLowerCase(),
+          fb = b.title.toLowerCase();
+  
+      if (fa < fb) {
+          return -1;
+      }
+      if (fa > fb) {
+          return 1;
+      }
+      return 0;
+    })
+   }
+   else if(z1==2)
+   {
+     
+    } 
+ console.log(ayur_arr)
+ document.getElementById("prodlist-r").innerHTML=null;
+ Verticalappend(ayur_arr);
+}
+++r;
 
-// }
 
-
-// }
+}
