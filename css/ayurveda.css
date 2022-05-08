@@ -666,9 +666,12 @@ font-size: 20px;
 color: gray;
 }
 
-
+#titleee{
+    text-align: center;
+}
 
 @media all and (min-width: 401px) and (max-width: 720px){
+
 
     /* for navbar */
     
@@ -714,6 +717,38 @@ color: gray;
         width: 40px;
         height: 27px;
         background-color: #dd0285;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-device-width: 0px) and (max-device-width: 768px) { 
+    #mainnnn{
+        /* height:250px; */
+        border:none;
+    }#titleee{
+        text-overflow: ellipsis;
+        margin-bottom: 30px;
+        height: 50px;
+        width: 12px;
+        box-sizing: border-box;
+        text-align: center;
+    }#addtocartbtn{
+        height: 30px;
+        width: 100px;
+
         font-size: 12px;
         color: white;
         justify-content: center;
