@@ -42,4 +42,15 @@ prod.forEach(function(e)
     document.getElementById("box6-rr").append(z11,z12);
 })
 
+///////////toShowUserName//////////////
+let data101 = JSON.parse(localStorage.getItem("acc_data")) ;
 
+  let append101 = (data101)=>{
+    
+        let acc = document.querySelector("#acc");
+        acc.textContent =  data101.name;
+   
+    }
+    append101(data101);
+
+/////////////////////////////////////
