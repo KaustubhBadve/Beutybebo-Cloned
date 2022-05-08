@@ -1,0 +1,62 @@
+#containerk{
+    width: 92%;
+    margin: auto;
+    border: 0px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+}.offer_bannerk imgk{
+    height: 400px;
+}#imgk{
+    width: 100%;
+}.offer_tabsk{
+    margin: auto;
+}
+.offer_tabsk>ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:space-around;
+    margin-left: -20px;
+}.offer_tabsk>ul li{
+    display: flex;
+    width: 95%;
+    border: 1px solid black;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.offers_rowk{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+    position: relative;
+    justify-content: center;
+}.offers_rowk >div >div{
+   border: 0px solid red;
+   position: absolute;
+   bottom: 10%;
+   width: 30%;
+   height: 40px;
+   background-color: white;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.offers_rowk >div >div a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}.offers_rowk >div >div a:hover{
+    color:#e58;
+}#allofferstextk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 33px;
+    font-weight: 600;
+    font-size: 14px;
+}#allofferstextk:hover{
+    color: #e58;
+    background-color: rgb(234, 245, 242);
+}
