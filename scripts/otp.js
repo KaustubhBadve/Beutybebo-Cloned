@@ -26,11 +26,19 @@
 
     if(otp == enteredOtp){
             document.getElementById("errorMsg").textContent = "";
+            document.getElementById("loadinggifdiv").style.display="block"
+            document.getElementById("totaldiv").style.opacity="0.2"
+            setTimeout(function(){
+              
+                window.location.href="confirmed.html"
+            },4000)
             
-            window.location.href="confirmed.html"
 }
 else{
             document.getElementById("errorMsg").textContent = "Invalid OTP";
          }
         }
 
+
+
+    
