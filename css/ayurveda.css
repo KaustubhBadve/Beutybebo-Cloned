@@ -1,4 +1,3 @@
-
 #main-r{
     display:flex;
     width:71%;
@@ -672,7 +671,6 @@ color: gray;
 
 @media all and (min-width: 401px) and (max-width: 720px){
 
-
     /* for navbar */
     
     #navbartitle1,#navbartitle2,#navbartitle3,#navbartitle,#navbartitle4,#navbartitle5,#navbartitle6,#navbartitle7{
@@ -717,38 +715,6 @@ color: gray;
         width: 40px;
         height: 27px;
         background-color: #dd0285;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media  screen and (min-device-width: 0px) and (max-device-width: 768px) { 
-    #mainnnn{
-        /* height:250px; */
-        border:none;
-    }#titleee{
-        text-overflow: ellipsis;
-        margin-bottom: 30px;
-        height: 50px;
-        width: 12px;
-        box-sizing: border-box;
-        text-align: center;
-    }#addtocartbtn{
-        height: 30px;
-        width: 100px;
-
         font-size: 12px;
         color: white;
         justify-content: center;
@@ -938,23 +904,4 @@ color: gray;
     #choose-r{
         display: none;
     }
-}    
-
-
-
-
-
-
-     
-         
-
-
-
-
-
-
-
-
-
-
-
+}
