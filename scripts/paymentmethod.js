@@ -679,6 +679,18 @@ let totalprice=localStorage.getItem("Totalprice")
 
 document.getElementById("paumenttotalrs").innerText="₹ "+totalprice
      
+///////////toShowUserName//////////////
+let data101 = JSON.parse(localStorage.getItem("acc_data")) ;
+
+  let append101 = (data101)=>{
+    
+        let acc = document.querySelector("#acc");
+        acc.textContent =  data101.name;
+   
+    }
+    append101(data101);
+
+/////////////////////////////////////
       
 
 

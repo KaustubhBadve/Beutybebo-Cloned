@@ -17,3 +17,5 @@ let data1 = JSON.parse(localStorage.getItem("acc_data")) ;
    
     }
     append(data1);
+
+    
