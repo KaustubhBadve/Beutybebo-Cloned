@@ -944,6 +944,18 @@ function funmakeup4(){
   window.location.href="mom_baby.html"
 }
 
+document.getElementById("withoutarrow111").addEventListener("click",funmakeup5)
+
+function funmakeup5(){
+  window.location.href="fragrance.html"
+}
+
+document.getElementById("withoutarrow222").addEventListener("click",funmakeup6)
+
+function funmakeup6(){
+  window.location.href="ayurveda.html"
+}
+
 
 
 

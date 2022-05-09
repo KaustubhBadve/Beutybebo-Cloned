@@ -647,13 +647,13 @@ color: #be2882;
     margin-left: 10px;
     font-size: 10px;
 }
-#withoutarrow{
+#withoutarrow111,#withoutarrow222{
     display: flex !important;
     font-size: 14px;
     color: grey;
     cursor: pointer;
 }
-#withoutarrow:hover{
+#withoutarrow111:hover,#withoutarrow222:hover{
     color: #be2882;
 }
 #slidingshow{
