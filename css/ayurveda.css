@@ -668,7 +668,10 @@ color: gray;
 #titleee{
     text-align: center;
 }
-
+#imgdivvv{
+    height: 280px !important;
+    
+}
 @media all and (min-width: 401px) and (max-width: 720px){
 
     /* for navbar */

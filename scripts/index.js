@@ -914,6 +914,39 @@ let data101 = JSON.parse(localStorage.getItem("acc_data")) ;
 
 
 
+document.getElementById("witharrow1").addEventListener("click",funmakeup)
+
+function funmakeup(){
+  window.location.href="makeup.html"
+}
+
+document.getElementById("witharrow2").addEventListener("click",funmakeup1)
+
+function funmakeup1(){
+  window.location.href="skin.html"
+}
+
+document.getElementById("witharrow3").addEventListener("click",funmakeup2)
+
+function funmakeup2(){
+  window.location.href="hair.html"
+}
+
+document.getElementById("witharrow4").addEventListener("click",funmakeup3)
+
+function funmakeup3(){
+  window.location.href="personalcare.html"
+}
+
+document.getElementById("witharrow5").addEventListener("click",funmakeup4)
+
+function funmakeup4(){
+  window.location.href="mom_baby.html"
+}
+
+
+
+
 
 
 

@@ -632,6 +632,7 @@ function append()
     let cvv=document.createElement("p");
     cvv.innerText="CVV";
     let input3=document.createElement("input");
+    input3.type="password"
     div1b.append(cvv,input3);
 
     div1.append(div1a,div1b);
