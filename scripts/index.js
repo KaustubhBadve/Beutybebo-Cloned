@@ -898,26 +898,10 @@ Verticalappend(16,"q")
 
 Cartelementshow()
 
-
-///////////toShowUserName//////////////
-let data101 = JSON.parse(localStorage.getItem("acc_data")) ;
-
-  let append101 = (data101)=>{
-    
-        let acc = document.querySelector("#acc");
-        acc.textContent =  data101.name;
-   
-    }
-    append101(data101);
-
-/////////////////////////////////////
-
-
-
 document.getElementById("witharrow1").addEventListener("click",funmakeup)
 
 function funmakeup(){
-  window.location.href="makeup.html"
+   location.assign("makeup.html"); 
 }
 
 document.getElementById("witharrow2").addEventListener("click",funmakeup1)
@@ -955,6 +939,22 @@ document.getElementById("withoutarrow222").addEventListener("click",funmakeup6)
 function funmakeup6(){
   window.location.href="ayurveda.html"
 }
+
+
+
+///////////toShowUserName//////////////
+let data101 = JSON.parse(localStorage.getItem("acc_data")) ;
+
+  let append101 = (data101)=>{
+    
+        let acc = document.querySelector("#acc");
+        acc.textContent =  data101.name;
+   
+    }
+    append101(data101);
+
+/////////////////////////////////////
+
 
 
 
