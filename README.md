@@ -9,4 +9,11 @@
 <a href="https://github.com/kunalpratapsinghh">Kunal Singh</a>
 <br>
 <a href="https://github.com/BKS2315">Brajkishor Singh</a>
-<img src="https://media-exp1.licdn.com/dms/image/C5622AQGiDM0WAP97uQ/feedshare-shrink_2048_1536/0/1652344571768?e=1659571200&v=beta&t=KQ_MRpQNZ20vOa-9J5zWboc0bUgwZYkpRmjH2golmW4"/>
+<br>
+
+<h4>Landing Page</h4>
+
+<img src="https://user-images.githubusercontent.com/98819392/185300959-35cb2844-c9b2-4e00-88dc-f47ce80f4b76.png"/>
+
+
+
