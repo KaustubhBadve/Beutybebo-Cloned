@@ -1,4 +1,4 @@
-<h4>Project Title</h4> <br>
+<h2>Project Title</h2> <br>
 <a href="https://elegant-centaur-093589.netlify.app/">Clone of beautybebo.com</a>
 <hr>
 <p>Beauty Bebo is India’s fastest growing online retail store for the day to day and special occasion need of the Makeup, Skin care, Hair care, Personal care, Mom and Baby care, Fragrance and Ayurveda products.</p>
@@ -23,4 +23,14 @@
 <img src="https://user-images.githubusercontent.com/101566134/185566905-0b96320c-e64d-4e2c-94b7-c473ed791777.png"/><br>
 
 
+<h3>Tech Stacks used </h3>
+<li>HTML</li>
 
+<li>CSS</li>
+
+<li>Javascript</li>
+
+<li>Beuty API</li>
+
+
+<li>MASAI API for authentification</li>
