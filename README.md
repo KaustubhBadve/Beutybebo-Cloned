@@ -26,7 +26,7 @@
 
 
 <li>MASAI API for authentification</li>
-
+<hr><br>
 NetlifyLink : elegant-centaur-093589.netlify.app/
 
 ## Notes :
